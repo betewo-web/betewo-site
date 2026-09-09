@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CapitalGuard 台股監控</title>
+<meta name="description" content="台股上市櫃近兩千檔每日 0–100 分數，自選股盤中支撐壓力、爆量、漲跌停 15 秒內推播到手機。LINE 掃碼登入，免費開始。">
+<link rel="canonical" href="https://betewo-web.github.io/betewo-site/index.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CapitalGuard 台股監控">
+<meta property="og:title" content="CapitalGuard 台股監控">
+<meta property="og:description" content="台股上市櫃近兩千檔每日 0–100 分數，自選股盤中支撐壓力、爆量、漲跌停 15 秒內推播到手機。LINE 掃碼登入，免費開始。">
+<meta property="og:url" content="https://betewo-web.github.io/betewo-site/index.html">
+<meta property="og:image" content="https://betewo-web.github.io/CapitalGuard-pages/icons/icon-512.png">
+<meta name="theme-color" content="#0e1528">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20rx%3D%2296%22%20fill%3D%22%230e1528%22%2F%3E%3Ccircle%20cx%3D%22256%22%20cy%3D%22256%22%20r%3D%22168%22%20stroke%3D%22%233ce6d1%22%20stroke-width%3D%2222%22%20fill%3D%22none%22%2F%3E%3Ccircle%20cx%3D%22256%22%20cy%3D%22256%22%20r%3D%22100%22%20stroke%3D%22%2356a8ff%22%20stroke-width%3D%2218%22%20fill%3D%22none%22%2F%3E%3Ccircle%20cx%3D%22256%22%20cy%3D%22256%22%20r%3D%2230%22%20fill%3D%22%233ce6d1%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
+<link rel="stylesheet" href="site.css?v=2">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="CapitalGuard 首頁"><svg class="brand-mark" viewBox="0 0 512 512" aria-hidden="true"><defs><linearGradient id="cg-ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3ce6d1"/><stop offset="1" stop-color="#56a8ff"/></linearGradient></defs><rect width="512" height="512" rx="96" fill="#0e1528"/><circle cx="256" cy="256" r="168" stroke="url(#cg-ring)" stroke-width="22" fill="none" opacity=".9"/><circle cx="256" cy="256" r="100" stroke="url(#cg-ring)" stroke-width="18" fill="none" opacity=".7"/><circle cx="256" cy="256" r="30" fill="url(#cg-ring)"/></svg><span class="brand-name">CapitalGuard</span><span class="brand-sub">台股監控</span></a>
+    <nav class="site-nav" id="site-nav" aria-label="主選單">
+      <a href="features.html">功能</a> <a href="pricing.html">方案與價格</a> <a href="contact.html">聯絡</a>
+      <a class="btn btn-primary btn-sm" href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html">開啟 App</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">選單</button>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow">台股 上市／上櫃 全市場每日分數 · 盤中即時訊號</span>
+      <h1>每天 06:15，上市櫃近兩千檔重新評分一次。</h1>
+      <p class="lead">盤中每 5 秒更新自選股的報價與關卡狀態。跌破支撐、帶量上漲、漲跌停，訊號 15 秒內推到手機，不用整天開著看盤軟體。</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary btn-lg" href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html">免費開始</a>
+        <a class="btn btn-ghost btn-lg" href="pricing.html">看方案與價格</a>
+      </div>
+      <p class="hero-note"><b>LINE 掃碼登入</b>，不用下載、不用設密碼。免費方案含 3 檔自選股與全部盤中、盤後通知，沒有期限。</p>
+    </div>
+    <div class="hero-visual">
+      <div class="phone" aria-label="通知匣示意">
+        <div class="score-chip">2330 台積電 · 今日分數<b>82 <span class="grade">較前期 +3</span></b></div>
+        <div class="phone-top"><span class="title">通知</span><span class="live">LIVE 10:42</span></div>
+        <ul class="feed">
+          <li class="sig" data-sev="orange"><div class="sig-tile" aria-hidden="true">↓</div><div class="sig-body"><div class="sig-head"><span class="sig-code">2330</span><span class="sig-name">台積電</span></div><div class="sig-text">跌破支撐 1,045，已連續兩輪確認</div></div><div class="sig-meta">10:42<br><span class="chg-down">−1.8%</span></div></li>
+          <li class="sig" data-sev="blue"><div class="sig-tile" aria-hidden="true">≋</div><div class="sig-body"><div class="sig-head"><span class="sig-code">2454</span><span class="sig-name">聯發科</span></div><div class="sig-text">開盤後 102 分鐘累計 18,200 張，為 20 日均量的 1.60 倍</div></div><div class="sig-meta">10:31<br><span class="chg-up">+2.4%</span></div></li>
+          <li class="sig" data-sev="orange"><div class="sig-tile" aria-hidden="true">▲</div><div class="sig-body"><div class="sig-head"><span class="sig-code">3037</span><span class="sig-name">欣興</span></div><div class="sig-text">漲停鎖住，委買 12,480 張</div></div><div class="sig-meta">09:58<br><span class="chg-up">+10.0%</span></div></li>
+          <li class="sig" data-sev="blue"><div class="sig-tile" aria-hidden="true">↗</div><div class="sig-body"><div class="sig-head"><span class="sig-code">2317</span><span class="sig-name">鴻海</span></div><div class="sig-text">逼近壓力 206，距離 0.6%</div></div><div class="sig-meta">09:47<br><span class="chg-up">+1.2%</span></div></li>
+          <li class="sig" data-sev="info"><div class="sig-tile" aria-hidden="true">▤</div><div class="sig-body"><div class="sig-head"><span class="sig-code">06:15</span><span class="sig-name">每日評分報告</span></div><div class="sig-text">自選股 5 檔分數已更新，2 檔變動超過 3 分</div></div><div class="sig-meta">06:15</div></li>
+        </ul>
+        <p class="phone-caption">示意畫面，非即時報價</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="rhythm">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">一個交易日的節奏</span>
+      <h2>盤前、盤中、盤後，各做一件事。</h2>
+      <p class="lead">不是把所有資料塞給你，而是在對的時間，只推該看的。</p>
+    </div>
+    <div class="clock">
+      <div class="clock-item">
+        <div class="clock-time">06:15</div>
+        <h3>每日評分報告</h3>
+        <p>近兩千檔上市櫃股票重新計算 0–100 分，附 12 個子項分數、前期對照與變化原因。</p>
+      </div>
+      <div class="clock-item">
+        <div class="clock-time">09:00–13:30</div>
+        <h3>盤中雷達</h3>
+        <p>每 5 秒更新自選股報價與關卡狀態。支撐壓力、爆量、漲跌停、目標價，15 秒內到手機。</p>
+      </div>
+      <div class="clock-item">
+        <div class="clock-time">16:30</div>
+        <h3>盤後事件</h3>
+        <p>三大法人買賣超、融資融券變化與複合訊號整理成事件。一天一則，不重複。</p>
+      </div>
+      <div class="clock-item night">
+        <div class="clock-time">19:00–04:45</div>
+        <h3>夜間資料更新</h3>
+        <p>財報、籌碼、歷史價量分批更新，隔天開盤前備妥。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">功能</span>
+      <h2>一支手機，盯住你的自選股。</h2>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <span class="eyebrow">分數</span>
+        <h3>每日投資評分</h3>
+        <p>基本面 50%＋技術量能 50%，0–100 分。統計頁列出 12 個子項分數、前期對照與變化原因；排序與篩選條件由你自己設定。</p>
+      </div>
+      <div class="feature">
+        <span class="eyebrow">雷達</span>
+        <h3>盤中即時訊號</h3>
+        <p>支撐壓力的逼近與突破、收復支撐、爆量、漲跌停、目標價。門檻依每檔股票的波動自動調整，同一檔同一輪只推一則。</p>
+      </div>
+      <div class="feature">
+        <span class="eyebrow">規則</span>
+        <h3>自訂通知規則</h3>
+        <p>價格、漲跌幅、量能、RSI、MACD、均線、法人籌碼、營收與 EPS 等 20 種條件自由組合，在 App 裡就能編輯。</p>
+      </div>
+      <div class="feature">
+        <span class="eyebrow">持股</span>
+        <h3>持股損益與 K 線</h3>
+        <p>在自選股列記錄股數與成本，盤中即時市值與未實現損益；K 線視窗標出支撐壓力關卡與今天發過的訊號。</p>
+      </div>
+      <div class="feature">
+        <span class="eyebrow">盤後</span>
+        <h3>盤後事件彙整</h3>
+        <p>收盤後整理三大法人買賣超、融資融券變化與複合訊號，每則附 0–100 的顯著度，標題只描述資料。</p>
+      </div>
+      <div class="feature">
+        <span class="eyebrow">AI</span>
+        <h3>AI 資料白話<span class="tag">PRO</span><span class="tag tag-soon">開發中</span></h3>
+        <p>把分數變化與事件翻成白話說明。不做多空判斷、不預測走勢、不給買賣建議。</p>
+      </div>
+    </div>
+    <p style="margin-top:2.2rem"><a href="features.html">看完整功能說明 →</a></p>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">方案</span>
+      <h2>免費開始，需要再升級。</h2>
+      <p class="lead">三個方案差在自選股檔數、自訂規則條數與 AI。月費制，隨時可以取消，本站不儲存信用卡資料。</p>
+    </div>
+    <div class="plans">
+  <div class="plan">
+    <div class="plan-name">Free<b>免費版</b></div>
+    <div class="price">NT$0<small>永久免費</small></div>
+    <ul>
+      <li>3 檔自選股</li>
+      <li>3 條自訂通知規則</li>
+      <li>全部盤中、盤後通知與自訂目標價</li>
+      <li>每日評分報告與統計頁</li>
+      <li>持股損益與 K 線</li>
+      <li class="no">AI 事件解讀</li>
+      <li class="no">AI 問答</li>
+    </ul>
+    <a class="btn btn-ghost" href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html">免費開始</a>
+  </div>
+  <div class="plan lift">
+    <div class="plan-name">Basic<b>基本版</b></div>
+    <div class="price">NT$49<small>／月</small></div>
+    <ul>
+      <li>30 檔自選股</li>
+      <li>10 條自訂通知規則</li>
+      <li>全部盤中、盤後通知與自訂目標價</li>
+      <li>每日評分報告與統計頁</li>
+      <li>持股損益與 K 線</li>
+      <li class="no">AI 事件解讀</li>
+      <li class="no">AI 問答</li>
+    </ul>
+    <a class="btn btn-primary" href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html">登入後升級</a>
+  </div>
+  <div class="plan">
+    <div class="plan-name">Pro<b>專業版</b></div>
+    <div class="price">NT$299<small>／月</small></div>
+    <ul>
+      <li>200 檔自選股</li>
+      <li>30 條自訂通知規則</li>
+      <li>全部盤中、盤後通知與自訂目標價</li>
+      <li>每日評分報告與統計頁</li>
+      <li>持股損益與 K 線</li>
+      <li>AI 事件解讀 <span class="tag tag-soon">開發中</span></li>
+      <li>AI 問答，每日 200 次 <span class="tag tag-soon">開發中</span></li>
+    </ul>
+    <a class="btn btn-ghost" href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html">登入後升級</a>
+  </div>
+</div>
+    <p class="muted" style="margin-top:1.5rem">完整比較表、付款方式與退款政策見 <a href="pricing.html">方案與價格</a>。</p>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">常見問題</span>
+      <h2>開始之前</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>需要下載 App 嗎？</summary>
+        <div class="a">不用。CapitalGuard 是網頁應用程式（PWA），用瀏覽器開啟後「加入主畫面」就能像 App 一樣使用。iPhone 需 iOS 16.4 以上並加入主畫面，才能收到推播。</div>
+      </details>
+      <details>
+        <summary>用什麼登入？</summary>
+        <div class="a">LINE 掃碼登入，或在手機上直接用 LINE 登入。首次登入會自動建立帳號，不需要設定密碼，也不會讀取你的 LINE 聊天內容。</div>
+      </details>
+      <details>
+        <summary>通知怎麼送到手機？</summary>
+        <div class="a">透過瀏覽器的 Web Push 直接推到手機通知中心，不經 LINE 訊息，不另外收費。通知分兩級：橘色代表關卡已經觸發（漲跌停、跌破支撐、觸及目標價），藍色代表接近關卡或量能變化。</div>
+      </details>
+      <details>
+        <summary>免費版能用多久？</summary>
+        <div class="a">沒有期限。免費版有 3 檔自選股與 3 條自訂規則，盤中盤後通知、每日評分報告、持股損益、K 線都完整提供。</div>
+      </details>
+      <details>
+        <summary>付費後可以取消嗎？</summary>
+        <div class="a">隨時可以。取消後服務保留到當期結束，下期不再扣款。當期月費不按比例退還，詳見<a href="pricing.html#refund">退款政策</a>。</div>
+      </details>
+      <details>
+        <summary>這是投資建議嗎？</summary>
+        <div class="a">不是。CapitalGuard 是公開市場資料的整理與統計工具，所有分數、訊號、事件、篩選結果與 AI 說明都是資料計算的呈現，不對任何股票做買賣、持有或進出場的推介。本服務並非證券投資顧問事業，投資決策請自行判斷。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band">
+      <div>
+        <h2>把盯盤這件事交給推播。</h2>
+        <p>LINE 掃碼 30 秒開始，3 檔自選股免費，隨時升級。</p>
+      </div>
+      <a class="btn btn-primary btn-lg" href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html">開啟 App</a>
+    </div>
+    <div class="notice" style="margin-top:2rem">
+      <b>使用前請先確認</b>　CapitalGuard 是公開市場資料的整理與統計工具。所有分數、訊號、事件、篩選結果與 AI 說明，都是資料計算的呈現，<b>不是投資建議</b>，也不對任何股票做買賣、持有或進出場的推介。本服務並非證券投資顧問事業，不提供個別化投資諮詢。資料可能延遲、缺漏或有誤，推播不保證即時送達。投資決策請自行判斷並承擔全部風險。
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 512 512" aria-hidden="true"><defs><linearGradient id="cg-ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3ce6d1"/><stop offset="1" stop-color="#56a8ff"/></linearGradient></defs><rect width="512" height="512" rx="96" fill="#0e1528"/><circle cx="256" cy="256" r="168" stroke="url(#cg-ring)" stroke-width="22" fill="none" opacity=".9"/><circle cx="256" cy="256" r="100" stroke="url(#cg-ring)" stroke-width="18" fill="none" opacity=".7"/><circle cx="256" cy="256" r="30" fill="url(#cg-ring)"/></svg><span class="brand-name">CapitalGuard</span></a>
+      <p>台股每日分數與盤中訊號推播。所有分數、訊號、事件與 AI 說明皆為公開市場資料的整理與統計計算，不是投資建議。</p>
+    </div>
+    <div class="foot-col">
+      <h4>產品</h4>
+      <ul>
+        <li><a href="features.html">功能</a></li>
+        <li><a href="pricing.html">方案與價格</a></li>
+        <li><a href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html">開啟 App</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>條款</h4>
+      <ul>
+        <li><a href="terms.html">服務條款</a></li>
+        <li><a href="privacy.html">隱私權政策</a></li>
+        <li><a href="pricing.html#refund">退款政策</a></li>
+      </ul>
+    </div>
+    <div class="foot-col foot-contact" id="contact">
+      <h4>聯絡與公司資訊</h4>
+      <dl><dt>公司</dt><dd>貝特沃股份有限公司（Betewo）</dd><dt>統一編號</dt><dd>90712326</dd><dt>Email</dt><dd><a href="mailto:howard.chen@betewo.com">howard.chen@betewo.com</a></dd></dl>
+    </div>
+  </div>
+  <div class="wrap foot-legal">
+    <span>© 2026 Betewo. All rights reserved.</span>
+    <span>本服務並非證券投資顧問事業，不提供投資分析意見或推介建議。</span>
+  </div>
+</footer>
+<script>
+(function () {
+  var t = document.querySelector('.nav-toggle'), n = document.getElementById('site-nav');
+  if (!t || !n) return;
+  t.addEventListener('click', function () {
+    var open = n.classList.toggle('open');
+    t.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,20 +1,20 @@
 /* CapitalGuard 官網共用樣式
-   視覺沿用 PWA（web/watchlist.css）的深色系與青色主色，
+   視覺沿用 PWA（web/watchlist.css）的科技黑底與紫金主色，
    但字級與版面改為行銷頁的編排。單一深色主題，所有顏色皆明確指定。 */
 
 :root {
-  --bg: #090d16;
-  --bg-2: #0e1528;
-  --surface: #121a2e;
-  --surface-2: #182238;
-  --border: rgba(146, 160, 190, 0.18);
-  --border-strong: rgba(146, 160, 190, 0.34);
+  --bg: #0b0b13;
+  --bg-2: #0f0f1a;
+  --surface: #14141f;
+  --surface-2: #1a1a28;
+  --border: rgba(146, 146, 163, 0.2);
+  --border-strong: rgba(146, 146, 163, 0.36);
   --text: #e9edf6;
   --muted: #9aa5bd;
   --dim: #6d7891;
-  --accent: #3ce6d1;
-  --accent-ink: #062521;
-  --accent-2: #56a8ff;
+  --accent: #8b7cff;
+  --accent-ink: #120c2e;
+  --accent-2: #f5c542;
   --sig-orange: #ff9f43;
   --sig-blue: #56a8ff;
   --sig-info: #9aa5bd;
@@ -138,8 +138,8 @@ p + p { margin-top: 1em; }
   position: relative; overflow: hidden;
   padding: clamp(3rem, 8vw, 6rem) 0 clamp(3rem, 7vw, 5.5rem);
   background:
-    radial-gradient(60% 50% at 8% 0%, rgba(60, 230, 209, 0.14), transparent 65%),
-    radial-gradient(40% 40% at 95% 20%, rgba(86, 168, 255, 0.12), transparent 60%),
+    radial-gradient(60% 50% at 8% 0%, rgba(139, 124, 255, 0.16), transparent 65%),
+    radial-gradient(40% 40% at 95% 20%, rgba(245, 197, 66, 0.07), transparent 60%),
     repeating-linear-gradient(0deg, rgba(146, 160, 190, 0.045) 0 1px, transparent 1px 56px),
     repeating-linear-gradient(90deg, rgba(146, 160, 190, 0.045) 0 1px, transparent 1px 56px),
     var(--bg);
@@ -167,8 +167,8 @@ p + p { margin-top: 1em; }
 .phone-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.9rem; padding: 0 0.25rem; }
 .phone-top .title { font-weight: 700; font-size: 0.95rem; }
 .live { display: inline-flex; align-items: center; gap: 0.4rem; font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; color: var(--accent); }
-.live::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 0 rgba(60, 230, 209, 0.6); animation: pulse 2s infinite; }
-@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(60, 230, 209, 0.55); } 70% { box-shadow: 0 0 0 8px rgba(60, 230, 209, 0); } 100% { box-shadow: 0 0 0 0 rgba(60, 230, 209, 0); } }
+.live::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 0 rgba(139, 124, 255, 0.6); animation: pulse 2s infinite; }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(139, 124, 255, 0.55); } 70% { box-shadow: 0 0 0 8px rgba(139, 124, 255, 0); } 100% { box-shadow: 0 0 0 0 rgba(139, 124, 255, 0); } }
 @media (prefers-reduced-motion: reduce) { .live::before { animation: none; } }
 .feed { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.45rem; }
 .sig {
@@ -225,7 +225,7 @@ p + p { margin-top: 1em; }
 .feature h3 { margin-bottom: 0.5rem; }
 .feature p { color: var(--muted); font-size: 0.96rem; }
 .tag { display: inline-block; margin-left: 0.5rem; font-size: 0.7rem; font-family: var(--font-mono); letter-spacing: 0.1em; color: var(--sig-orange); border: 1px solid rgba(255, 159, 67, 0.5); border-radius: 999px; padding: 0.1rem 0.5rem; vertical-align: middle; line-height: 1.5; }
-.tag.tag-soon { color: var(--accent-2); border-color: rgba(86, 168, 255, 0.5); letter-spacing: 0.04em; }
+.tag.tag-soon { color: var(--accent-2); border-color: rgba(245, 197, 66, 0.5); letter-spacing: 0.04em; }
 .legend .glyph { font-family: var(--font-mono); font-weight: 700; color: var(--accent); }
 @media (max-width: 900px) { .features { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .features { grid-template-columns: 1fr; } }
@@ -284,7 +284,7 @@ table.compare thead th { background: var(--surface-2); font-weight: 700; }
 table.compare thead th .price-sm { display: block; font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent); font-weight: 500; margin-top: 0.15rem; }
 table.compare tbody tr:last-child td { border-bottom: 0; }
 table.compare .no { color: var(--dim); }
-table.compare th.lift, table.compare td.lift { background: rgba(60, 230, 209, 0.05); }
+table.compare th.lift, table.compare td.lift { background: rgba(139, 124, 255, 0.05); }
 
 /* ── FAQ ── */
 .faq { max-width: 44em; }
@@ -303,7 +303,7 @@ table.compare th.lift, table.compare td.lift { background: rgba(60, 230, 209, 0.
   color: var(--muted); font-size: 0.93rem;
 }
 .notice b { color: var(--text); }
-.cta-band { background: linear-gradient(135deg, rgba(60, 230, 209, 0.12), rgba(86, 168, 255, 0.08)); border: 1px solid var(--border-strong); border-radius: var(--radius); padding: clamp(2rem, 4vw, 3rem); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem; }
+.cta-band { background: linear-gradient(135deg, rgba(139, 124, 255, 0.12), rgba(245, 197, 66, 0.07)); border: 1px solid var(--border-strong); border-radius: var(--radius); padding: clamp(2rem, 4vw, 3rem); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem; }
 .cta-band h2 { font-size: clamp(1.4rem, 2.6vw, 1.9rem); }
 .cta-band p { color: var(--muted); margin-top: 0.4rem; }
 

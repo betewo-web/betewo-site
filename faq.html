@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>常見問題 · CapitalGuard 台股監控</title>
+<meta name="description" content="CapitalGuard 常見問題：怎麼開始、iPhone 與 Android 怎麼收到推播通知、分數怎麼算、支撐壓力怎麼定、資料來源、自訂通知規則、隱私與方案。">
+<link rel="canonical" href="https://betewo-web.github.io/betewo-site/faq.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CapitalGuard 台股監控">
+<meta property="og:title" content="常見問題 · CapitalGuard 台股監控">
+<meta property="og:description" content="怎麼開始、怎麼收到推播、分數怎麼算、資料從哪來、能不能自訂通知條件。">
+<meta property="og:url" content="https://betewo-web.github.io/betewo-site/faq.html">
+<meta property="og:image" content="https://betewo-web.github.io/betewo-site/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://betewo-web.github.io/betewo-site/og-cover.png">
+<meta name="theme-color" content="#0f0f1a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20rx%3D%2296%22%20fill%3D%22%2314122a%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%3E%3Ccircle%20cx%3D%22256%22%20cy%3D%22256%22%20r%3D%22139%22%20stroke%3D%22%238b7cff%22%20stroke-width%3D%2225%22%2F%3E%3Ccircle%20cx%3D%22256%22%20cy%3D%22256%22%20r%3D%2284%22%20stroke%3D%22%23c4b5fd%22%20stroke-width%3D%2222%22%2F%3E%3Cpath%20stroke%3D%22%23f5c542%22%20stroke-width%3D%2213%22%20d%3D%22M256%2070V49M442%20256h21M256%20442v21M70%20256H49%22%2F%3E%3Cpath%20stroke%3D%22%23f5c542%22%20stroke-width%3D%2220%22%20d%3D%22M227%20256h58M256%20227v58%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
+<link rel="stylesheet" href="site.css?v=3">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "需要下載 App 嗎？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "不用。CapitalGuard 是網頁應用程式（PWA），加入手機主畫面之後就像一般 App 一樣有圖示、全螢幕開啟、收得到推播通知。不必經過 App Store，也不必手動更新。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "為什麼一定要加 LINE 好友？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "帳號與登入碼都由 LINE 官方帳號發送，這是唯一的註冊入口。加好友的當下帳號就建立完成，不必設密碼，換手機時傳一句話就能重拿登入碼。加好友之後我們只傳登入與帳號相關的訊息，盤中與盤後的提醒走手機的推播通知，不會洗你的聊天室。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "iPhone 要怎麼才收得到通知？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "用 Safari 開啟 LINE 傳來的連結，先點下方分享鈕選「加入主畫面」，再從主畫面開啟 App 並允許通知。iOS 只允許已加入主畫面的網頁發送推播，需要 iOS 16.4 以上；在 Safari 分頁裡按「啟用通知」不會成功。Safari 與主畫面 App 的儲存空間不共用，所以安裝完要回 LINE 複製 8 碼登入碼貼進 App。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Android 要做什麼？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "點 LINE 訊息裡的「開始使用」，連結會交給 Chrome 開啟，照畫面提示安裝到桌面，再從桌面開啟 App 並允許通知。Chrome 與安裝後的 App 共用同一份登入狀態，通常不必再輸入登入碼。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "電腦可以用嗎？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "可以看分數、統計頁與 K 線。在 LINE 電腦版點「開始使用」的連結就會直接登入。推播通知請在手機上安裝，電腦不是設計上的收訊裝置。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "換手機或重新安裝之後怎麼登入？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "在 LINE 聊天室傳「登入」或「換手機」，會收到一組新的登入連結與 8 碼登入碼，舊的立刻失效。登入碼 24 小時有效，而且只能用一次。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "在 LINE 裡直接開網頁為什麼不能用？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "LINE 的內建瀏覽器沒有推播服務，在裡面登入也開不了通知，還會把一次性的登入碼用掉。頁面偵測到內建瀏覽器時會請你改用 Chrome 或 Safari 開啟，不會兌換你的碼。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "分數是怎麼算的？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "基本面佔 50%（營收成長、獲利能力、EPS 成長、財務體質、現金流），技術量能佔 50%（趨勢、動能、價格結構、成交量、量價關係、法人籌碼、融資融券），合計 0–100 分。12 個子項各有分數與前期對照，總分的變動會拆回子項，寫成一句一句的變化原因。分數經過平滑處理，單日的資料雜訊不會讓它跳動。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "分數高就代表會漲嗎？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "不是。分數是公開市場資料的統計整理，描述的是已經發生的事，不預測未來價格，也不對任何股票做買賣、持有或進出場的推介。怎麼解讀、要不要行動，由你自己判斷。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "哪些股票有分數？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "日均成交金額 500 萬以上的上市櫃股票，2026-09-15 當日為 1,166 檔。成交太稀薄的不計分，因為那種價格撐不起統計。全部兩千一百多檔上市櫃股票都可以搜尋、看 K 線、加進自選股與設定通知規則。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "支撐與壓力是怎麼決定的？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "依歷史價量結構計算，每天開盤前算好、當日凍結，不會在盤中飄移。突破與跌破需要連續兩輪確認並站穩一定幅度才發訊號，避免假突破一直響。判定的門檻依每檔股票自己的波動幅度調整，大型股與小型股用的不是同一把尺。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "盤中多久更新一次？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "自選股的報價與關卡狀態每 5 秒更新一次，訊號產生後 15 秒內送到手機。報價取自交易所的公開行情快照，更新節奏由交易所決定，不保證與券商看盤軟體的每一筆成交同步。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "盤中訊號有哪幾種？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "跌破支撐、逼近支撐、收復支撐、突破壓力、逼近壓力、漲停、跌停、爆量，加上你自己設定的上漲與下跌目標價。通知只有兩級：橘色代表關卡已經觸發，藍色代表接近關卡或量能出現變化。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "一天會收到幾則通知？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "同一檔股票同一輪的多個訊號會合併成一則，逼近類的訊號每檔每類每天只推一次。實際數量取決於你的自選股與當天的市場狀況；收盤後另有一則盤後事件整理，早上 06:15 有一則評分報告。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "資料從哪裡來？會不會有錯？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "證券交易所、櫃買中心、公開資訊觀測站等公開來源。資料可能延遲、缺漏或有誤，推播也依賴瀏覽器與作業系統的推播服務，不保證必達。請勿把本服務當成唯一的資訊來源或下單依據。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "可以設定哪些條件？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "21 種條件：價格與漲跌幅、成交量對均量、RSI、MACD、均線與均線交叉、52 週新高新低、前高前低、三大法人買賣超與連續買賣超、融資餘額、營收月增與年增、EPS 年增、ROE 等，可以在同一條規則裡組合。免費版 3 條，基本版 10 條，專業版 30 條，都在 App 裡直接編輯。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "規則是即時判斷還是收盤後？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "依條件而定。價格、漲跌幅、成交量這類盤中就能判斷的條件在盤中檢查；法人籌碼、融資、營收與 EPS 這類資料要等來源更新，在盤後與夜間資料更新之後檢查。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "你們看得到我的 LINE 訊息嗎？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "看不到。我們只取得你的 LINE 顯示名稱與識別碼，用來建立帳號。官方帳號只在你傳「登入」「換手機」這類關鍵字時回一組新的登入碼，不讀取也不保存其他聊天內容。詳見隱私權政策。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "要綁券商或銀行帳號嗎？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "不用。持股的股數與成本由你自己在 App 裡輸入，只用來計算市值與未實現損益，不連線到任何券商，也不能下單。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "付款資料存在哪裡？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "線上付款開放後由綠界科技（ECPay）處理，卡號不會經過也不會留在我們的系統。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "免費版能用多久？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "沒有期限。免費版有 3 檔自選股與 3 條自訂規則，盤中與盤後通知、每日評分報告、統計頁、持股損益、K 線都完整提供。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "付費方案差在哪裡？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "差在自選股檔數、自訂規則條數與 AI。基本版每月 NT$49、30 檔與 10 條；專業版每月 NT$299、200 檔與 30 條，另含 AI 資料白話說明（開發中）。其餘功能三個方案完全相同。完整比較見方案與價格。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "怎麼付款、怎麼取消？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "線上付款開放前，升級請來信手動開通。開放後為信用卡定期定額，隨時可以取消，取消後服務保留到當期結束，下期不再扣款。退款條件見退款政策。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "這是投資建議嗎？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "不是。CapitalGuard 是公開市場資料的整理與統計工具，所有分數、訊號、事件、篩選結果與 AI 說明都是資料計算的呈現，不對任何股票做買賣、持有或進出場的推介。本服務並非證券投資顧問事業，不提供個別化投資諮詢，投資決策請自行判斷並承擔全部風險。"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="CapitalGuard 首頁"><svg class="brand-mark" viewBox="0 0 512 512" aria-hidden="true"><rect width="512" height="512" rx="96" fill="#14122a"/><g fill="none" stroke-linecap="round"><circle cx="256" cy="256" r="139" stroke="#8b7cff" stroke-width="25"/><circle cx="256" cy="256" r="84" stroke="#c4b5fd" stroke-width="22"/><path stroke="#f5c542" stroke-width="13" d="M256 70V49M442 256h21M256 442v21M70 256H49"/><path stroke="#f5c542" stroke-width="20" d="M227 256h58M256 227v58"/></g></svg><span class="brand-name">CapitalGuard</span><span class="brand-sub">台股監控</span></a>
+    <nav class="site-nav" id="site-nav" aria-label="主選單">
+      <a href="features.html">功能</a> <a href="pricing.html">方案與價格</a> <a href="faq.html" aria-current="page">常見問題</a> <a href="contact.html">聯絡</a>
+      <a class="nav-app" href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html" data-cg="open-app">開啟 App</a>
+      <a class="btn btn-primary btn-sm" href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-nav">加 LINE 好友</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">選單</button>
+  </div>
+</header>
+<main>
+<div class="wrap doc-head">
+  <span class="eyebrow">常見問題</span>
+  <h1>你大概會想先問這些。</h1>
+  <p class="lead" style="margin-top:1rem">開始使用、通知怎麼送、分數怎麼算、資料從哪裡來、隱私與方案。找不到答案就<a href="contact.html">寫信問我們</a>。</p>
+  <div class="toc">
+    <a href="#start">開始使用</a>
+    <a href="#score">分數與訊號</a>
+    <a href="#rules">自訂通知規則</a>
+    <a href="#privacy">隱私與安全</a>
+    <a href="#plan">方案與費用</a>
+  </div>
+</div>
+
+<section class="section" id="start" style="padding-top:2.5rem">
+  <div class="wrap">
+    <div class="section-head"><h2>開始使用</h2></div>
+    <div class="faq">
+      <details>
+        <summary>需要下載 App 嗎？</summary>
+        <div class="a">不用。CapitalGuard 是網頁應用程式（PWA），加入手機主畫面之後就像一般 App 一樣有圖示、全螢幕開啟、收得到推播通知。不必經過 App Store，也不必手動更新。</div>
+      </details>
+      <details>
+        <summary>為什麼一定要加 LINE 好友？</summary>
+        <div class="a">帳號與登入碼都由 LINE 官方帳號發送，這是唯一的註冊入口。加好友的當下帳號就建立完成，不必設密碼，換手機時傳一句話就能重拿登入碼。加好友之後我們只傳登入與帳號相關的訊息，盤中與盤後的提醒走手機的推播通知，不會洗你的聊天室。</div>
+      </details>
+      <details>
+        <summary>iPhone 要怎麼才收得到通知？</summary>
+        <div class="a">用 Safari 開啟 LINE 傳來的連結，先點下方分享鈕選「加入主畫面」，再從主畫面開啟 App 並允許通知。iOS 只允許已加入主畫面的網頁發送推播，需要 iOS 16.4 以上；在 Safari 分頁裡按「啟用通知」不會成功。Safari 與主畫面 App 的儲存空間不共用，所以安裝完要回 LINE 複製 8 碼登入碼貼進 App。</div>
+      </details>
+      <details>
+        <summary>Android 要做什麼？</summary>
+        <div class="a">點 LINE 訊息裡的「開始使用」，連結會交給 Chrome 開啟，照畫面提示安裝到桌面，再從桌面開啟 App 並允許通知。Chrome 與安裝後的 App 共用同一份登入狀態，通常不必再輸入登入碼。</div>
+      </details>
+      <details>
+        <summary>電腦可以用嗎？</summary>
+        <div class="a">可以看分數、統計頁與 K 線。在 LINE 電腦版點「開始使用」的連結就會直接登入。推播通知請在手機上安裝，電腦不是設計上的收訊裝置。</div>
+      </details>
+      <details>
+        <summary>換手機或重新安裝之後怎麼登入？</summary>
+        <div class="a">在 LINE 聊天室傳「登入」或「換手機」，會收到一組新的登入連結與 8 碼登入碼，舊的立刻失效。登入碼 24 小時有效，而且只能用一次。</div>
+      </details>
+      <details>
+        <summary>在 LINE 裡直接開網頁為什麼不能用？</summary>
+        <div class="a">LINE 的內建瀏覽器沒有推播服務，在裡面登入也開不了通知，還會把一次性的登入碼用掉。頁面偵測到內建瀏覽器時會請你改用 Chrome 或 Safari 開啟，不會兌換你的碼。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="score">
+  <div class="wrap">
+    <div class="section-head"><h2>分數與訊號</h2></div>
+    <div class="faq">
+      <details>
+        <summary>分數是怎麼算的？</summary>
+        <div class="a">基本面佔 50%（營收成長、獲利能力、EPS 成長、財務體質、現金流），技術量能佔 50%（趨勢、動能、價格結構、成交量、量價關係、法人籌碼、融資融券），合計 0–100 分。12 個子項各有分數與前期對照，總分的變動會拆回子項，寫成一句一句的變化原因。分數經過平滑處理，單日的資料雜訊不會讓它跳動。</div>
+      </details>
+      <details>
+        <summary>分數高就代表會漲嗎？</summary>
+        <div class="a">不是。分數是公開市場資料的統計整理，描述的是已經發生的事，不預測未來價格，也不對任何股票做買賣、持有或進出場的推介。怎麼解讀、要不要行動，由你自己判斷。</div>
+      </details>
+      <details>
+        <summary>哪些股票有分數？</summary>
+        <div class="a">日均成交金額 500 萬以上的上市櫃股票，2026-09-15 當日為 1,166 檔。成交太稀薄的不計分，因為那種價格撐不起統計。全部兩千一百多檔上市櫃股票都可以搜尋、看 K 線、加進自選股與設定通知規則。</div>
+      </details>
+      <details>
+        <summary>支撐與壓力是怎麼決定的？</summary>
+        <div class="a">依歷史價量結構計算，每天開盤前算好、當日凍結，不會在盤中飄移。突破與跌破需要連續兩輪確認並站穩一定幅度才發訊號，避免假突破一直響。判定的門檻依每檔股票自己的波動幅度調整，大型股與小型股用的不是同一把尺。</div>
+      </details>
+      <details>
+        <summary>盤中多久更新一次？</summary>
+        <div class="a">自選股的報價與關卡狀態每 5 秒更新一次，訊號產生後 15 秒內送到手機。報價取自交易所的公開行情快照，更新節奏由交易所決定，不保證與券商看盤軟體的每一筆成交同步。</div>
+      </details>
+      <details>
+        <summary>盤中訊號有哪幾種？</summary>
+        <div class="a">跌破支撐、逼近支撐、收復支撐、突破壓力、逼近壓力、漲停、跌停、爆量，加上你自己設定的上漲與下跌目標價。通知只有兩級：橘色代表關卡已經觸發，藍色代表接近關卡或量能出現變化。</div>
+      </details>
+      <details>
+        <summary>一天會收到幾則通知？</summary>
+        <div class="a">同一檔股票同一輪的多個訊號會合併成一則，逼近類的訊號每檔每類每天只推一次。實際數量取決於你的自選股與當天的市場狀況；收盤後另有一則盤後事件整理，早上 06:15 有一則評分報告。</div>
+      </details>
+      <details>
+        <summary>資料從哪裡來？會不會有錯？</summary>
+        <div class="a">證券交易所、櫃買中心、公開資訊觀測站等公開來源。資料可能延遲、缺漏或有誤，推播也依賴瀏覽器與作業系統的推播服務，不保證必達。請勿把本服務當成唯一的資訊來源或下單依據。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="rules">
+  <div class="wrap">
+    <div class="section-head"><h2>自訂通知規則</h2></div>
+    <div class="faq">
+      <details>
+        <summary>可以設定哪些條件？</summary>
+        <div class="a">21 種條件：價格與漲跌幅、成交量對均量、RSI、MACD、均線與均線交叉、52 週新高新低、前高前低、三大法人買賣超與連續買賣超、融資餘額、營收月增與年增、EPS 年增、ROE 等，可以在同一條規則裡組合。免費版 3 條，基本版 10 條，專業版 30 條，都在 App 裡直接編輯。</div>
+      </details>
+      <details>
+        <summary>規則是即時判斷還是收盤後？</summary>
+        <div class="a">依條件而定。價格、漲跌幅、成交量這類盤中就能判斷的條件在盤中檢查；法人籌碼、融資、營收與 EPS 這類資料要等來源更新，在盤後與夜間資料更新之後檢查。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="privacy">
+  <div class="wrap">
+    <div class="section-head"><h2>隱私與安全</h2></div>
+    <div class="faq">
+      <details>
+        <summary>你們看得到我的 LINE 訊息嗎？</summary>
+        <div class="a">看不到。我們只取得你的 LINE 顯示名稱與識別碼，用來建立帳號。官方帳號只在你傳「登入」「換手機」這類關鍵字時回一組新的登入碼，不讀取也不保存其他聊天內容。詳見<a href="privacy.html">隱私權政策</a>。</div>
+      </details>
+      <details>
+        <summary>要綁券商或銀行帳號嗎？</summary>
+        <div class="a">不用。持股的股數與成本由你自己在 App 裡輸入，只用來計算市值與未實現損益，不連線到任何券商，也不能下單。</div>
+      </details>
+      <details>
+        <summary>付款資料存在哪裡？</summary>
+        <div class="a">線上付款開放後由綠界科技（ECPay）處理，卡號不會經過也不會留在我們的系統。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="plan">
+  <div class="wrap">
+    <div class="section-head"><h2>方案與費用</h2></div>
+    <div class="faq">
+      <details>
+        <summary>免費版能用多久？</summary>
+        <div class="a">沒有期限。免費版有 3 檔自選股與 3 條自訂規則，盤中與盤後通知、每日評分報告、統計頁、持股損益、K 線都完整提供。</div>
+      </details>
+      <details>
+        <summary>付費方案差在哪裡？</summary>
+        <div class="a">差在自選股檔數、自訂規則條數與 AI。基本版每月 NT$49、30 檔與 10 條；專業版每月 NT$299、200 檔與 30 條，另含 AI 資料白話說明（開發中）。其餘功能三個方案完全相同。完整比較見<a href="pricing.html">方案與價格</a>。</div>
+      </details>
+      <details>
+        <summary>怎麼付款、怎麼取消？</summary>
+        <div class="a">線上付款開放前，升級請<a href="mailto:howard.chen@betewo.com?subject=CapitalGuard%20%E5%8D%87%E7%B4%9A%E7%94%B3%E8%AB%8B">來信</a>手動開通。開放後為信用卡定期定額，隨時可以取消，取消後服務保留到當期結束，下期不再扣款。退款條件見<a href="pricing.html#refund">退款政策</a>。</div>
+      </details>
+      <details>
+        <summary>這是投資建議嗎？</summary>
+        <div class="a">不是。CapitalGuard 是公開市場資料的整理與統計工具，所有分數、訊號、事件、篩選結果與 AI 說明都是資料計算的呈現，不對任何股票做買賣、持有或進出場的推介。本服務並非證券投資顧問事業，不提供個別化投資諮詢，投資決策請自行判斷並承擔全部風險。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band">
+      <div>
+        <h2>問題解決了就開始吧。</h2>
+        <p>加 LINE 好友，3 檔自選股免費，沒有期限。</p>
+      </div>
+      <a class="btn btn-primary btn-lg" href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-foot">加 LINE 好友，免費開始</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 512 512" aria-hidden="true"><rect width="512" height="512" rx="96" fill="#14122a"/><g fill="none" stroke-linecap="round"><circle cx="256" cy="256" r="139" stroke="#8b7cff" stroke-width="25"/><circle cx="256" cy="256" r="84" stroke="#c4b5fd" stroke-width="22"/><path stroke="#f5c542" stroke-width="13" d="M256 70V49M442 256h21M256 442v21M70 256H49"/><path stroke="#f5c542" stroke-width="20" d="M227 256h58M256 227v58"/></g></svg><span class="brand-name">CapitalGuard</span></a>
+      <p>台股每日分數與盤中訊號推播。所有分數、訊號、事件與 AI 說明皆為公開市場資料的整理與統計計算，不是投資建議。</p>
+    </div>
+    <div class="foot-col">
+      <h4>產品</h4>
+      <ul>
+        <li><a href="features.html">功能</a></li>
+        <li><a href="pricing.html">方案與價格</a></li>
+        <li><a href="faq.html">常見問題</a></li>
+        <li><a href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html" data-cg="open-app">開啟 App</a></li>
+        <li><a href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-foot-nav">加 LINE 好友</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>條款</h4>
+      <ul>
+        <li><a href="terms.html">服務條款</a></li>
+        <li><a href="privacy.html">隱私權政策</a></li>
+        <li><a href="pricing.html#refund">退款政策</a></li>
+      </ul>
+    </div>
+    <div class="foot-col foot-contact" id="contact">
+      <h4>聯絡與公司資訊</h4>
+      <dl><dt>公司</dt><dd>貝特沃股份有限公司（Betewo）</dd><dt>統一編號</dt><dd>90712326</dd><dt>Email</dt><dd><a href="mailto:howard.chen@betewo.com">howard.chen@betewo.com</a></dd></dl>
+    </div>
+  </div>
+  <div class="wrap foot-legal">
+    <span>© 2026 Betewo. All rights reserved.</span>
+    <span>本服務並非證券投資顧問事業，不提供投資分析意見或推介建議。</span>
+  </div>
+</footer>
+<script>
+(function () {
+  var t = document.querySelector('.nav-toggle'), n = document.getElementById('site-nav');
+  if (!t || !n) return;
+  t.addEventListener('click', function () {
+    var open = n.classList.toggle('open');
+    t.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+})();
+</script>
+<script src="analytics.js?v=1" defer></script>
+</body>
+</html>

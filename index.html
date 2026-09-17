@@ -4,28 +4,33 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CapitalGuard 台股監控</title>
-<meta name="description" content="台股上市櫃近兩千檔每日 0–100 分數，自選股盤中支撐壓力、爆量、漲跌停 15 秒內推播到手機。LINE 掃碼登入，免費開始。">
+<meta name="description" content="台股上市櫃一千一百多檔每日 0–100 分數，自選股盤中支撐壓力、爆量、漲跌停 15 秒內推播到手機。加 LINE 好友即可開始，免費方案沒有期限。">
 <link rel="canonical" href="https://betewo-web.github.io/betewo-site/index.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="CapitalGuard 台股監控">
 <meta property="og:title" content="CapitalGuard 台股監控">
-<meta property="og:description" content="台股上市櫃近兩千檔每日 0–100 分數，自選股盤中支撐壓力、爆量、漲跌停 15 秒內推播到手機。LINE 掃碼登入，免費開始。">
+<meta property="og:description" content="台股上市櫃一千一百多檔每日 0–100 分數，自選股盤中支撐壓力、爆量、漲跌停 15 秒內推播到手機。加 LINE 好友即可開始，免費方案沒有期限。">
 <meta property="og:url" content="https://betewo-web.github.io/betewo-site/index.html">
-<meta property="og:image" content="https://betewo-web.github.io/CapitalGuard-pages/icons/icon-512.png">
+<meta property="og:image" content="https://betewo-web.github.io/betewo-site/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://betewo-web.github.io/betewo-site/og-cover.png">
 <meta name="theme-color" content="#0f0f1a">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Crect%20width%3D%22512%22%20height%3D%22512%22%20rx%3D%2296%22%20fill%3D%22%2314122a%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%3E%3Ccircle%20cx%3D%22256%22%20cy%3D%22256%22%20r%3D%22139%22%20stroke%3D%22%238b7cff%22%20stroke-width%3D%2225%22%2F%3E%3Ccircle%20cx%3D%22256%22%20cy%3D%22256%22%20r%3D%2284%22%20stroke%3D%22%23c4b5fd%22%20stroke-width%3D%2222%22%2F%3E%3Cpath%20stroke%3D%22%23f5c542%22%20stroke-width%3D%2213%22%20d%3D%22M256%2070V49M442%20256h21M256%20442v21M70%20256H49%22%2F%3E%3Cpath%20stroke%3D%22%23f5c542%22%20stroke-width%3D%2220%22%20d%3D%22M227%20256h58M256%20227v58%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
-<link rel="stylesheet" href="site.css?v=2">
+<link rel="stylesheet" href="site.css?v=3">
 </head>
 <body>
 <header class="site-head">
   <div class="wrap">
     <a class="brand" href="index.html" aria-label="CapitalGuard 首頁"><svg class="brand-mark" viewBox="0 0 512 512" aria-hidden="true"><rect width="512" height="512" rx="96" fill="#14122a"/><g fill="none" stroke-linecap="round"><circle cx="256" cy="256" r="139" stroke="#8b7cff" stroke-width="25"/><circle cx="256" cy="256" r="84" stroke="#c4b5fd" stroke-width="22"/><path stroke="#f5c542" stroke-width="13" d="M256 70V49M442 256h21M256 442v21M70 256H49"/><path stroke="#f5c542" stroke-width="20" d="M227 256h58M256 227v58"/></g></svg><span class="brand-name">CapitalGuard</span><span class="brand-sub">台股監控</span></a>
     <nav class="site-nav" id="site-nav" aria-label="主選單">
-      <a href="features.html">功能</a> <a href="pricing.html">方案與價格</a> <a href="contact.html">聯絡</a>
-      <a class="btn btn-primary btn-sm" href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html">開啟 App</a>
+      <a href="features.html">功能</a> <a href="pricing.html">方案與價格</a> <a href="faq.html">常見問題</a> <a href="contact.html">聯絡</a>
+      <a class="nav-app" href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html" data-cg="open-app">開啟 App</a>
+      <a class="btn btn-primary btn-sm" href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-nav">加 LINE 好友</a>
     </nav>
     <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">選單</button>
   </div>
@@ -35,13 +40,13 @@
   <div class="wrap">
     <div class="hero-copy">
       <span class="eyebrow">台股 上市／上櫃 全市場每日分數 · 盤中即時訊號</span>
-      <h1>每天 06:15，上市櫃近兩千檔重新統計分析一次。</h1>
+      <h1>每天 06:15，上市櫃一千一百多檔重新統計一次。</h1>
       <p class="lead">盤中每 5 秒更新自選股的報價與關卡狀態。跌破支撐、帶量上漲、漲跌停，訊號 15 秒內推到手機，不用整天開著看盤軟體。</p>
       <div class="hero-cta">
-        <a class="btn btn-primary btn-lg" href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html">免費開始</a>
-        <a class="btn btn-ghost btn-lg" href="pricing.html">看方案與價格</a>
+        <a class="btn btn-primary btn-lg" href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-hero">加 LINE 好友，免費開始</a>
+        <a class="btn btn-ghost btn-lg" href="#start">怎麼開始？</a>
       </div>
-      <p class="hero-note"><b>LINE 掃碼登入</b>，不用下載、不用設密碼。免費方案含 3 檔自選股與全部盤中、盤後通知，沒有期限。</p>
+      <p class="hero-note"><b>加 LINE 好友即可登入</b>，不用下載、不用設密碼。免費方案含 3 檔自選股與全部盤中、盤後通知，沒有期限。</p>
     </div>
     <div class="hero-visual">
       <div class="phone" aria-label="通知匣示意">
@@ -60,6 +65,60 @@
   </div>
 </section>
 
+<section class="section" id="start">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">怎麼開始</span>
+      <h2>三個步驟，大約三分鐘。</h2>
+      <p class="lead">加好友之後，LINE 會立刻傳一則訊息給你，裡面有「開始使用」的連結和 8 碼登入碼。剩下的照你的手機做一次就好。</p>
+    </div>
+
+    <div class="os-tabs">
+      <input type="radio" name="os" id="os-android" checked>
+      <label for="os-android">Android</label>
+      <input type="radio" name="os" id="os-iphone">
+      <label for="os-iphone">iPhone</label>
+      <input type="radio" name="os" id="os-pc">
+      <label for="os-pc">電腦</label>
+
+      <div class="os-panel" data-os="android">
+        <ol class="steps">
+          <li><b>加 LINE 好友</b><span>點上面的按鈕，或在 LINE 搜尋 @408csebn。加好友的當下帳號就建立完成，訊息會立刻送到。</span></li>
+          <li><b>點「開始使用」，把 App 裝到桌面</b><span>連結會用 Chrome 開啟，照畫面提示選「安裝」或「加入主畫面」。</span></li>
+          <li><b>從桌面開啟，允許通知</b><span>Chrome 與 App 共用登入，通常不必再輸入登入碼。允許通知之後，訊號就會送進手機的通知中心。</span></li>
+        </ol>
+      </div>
+
+      <div class="os-panel" data-os="iphone">
+        <ol class="steps">
+          <li><b>加 LINE 好友</b><span>點上面的按鈕，或在 LINE 搜尋 @408csebn。加好友的當下帳號就建立完成，訊息會立刻送到。</span></li>
+          <li><b>用 Safari 開連結，先「加入主畫面」</b><span>點下方分享鈕 → 加入主畫面。iPhone 一定要先安裝才收得到推播，需要 iOS 16.4 以上。</span></li>
+          <li><b>從主畫面開啟，貼上 8 碼登入碼</b><span>回 LINE 點「複製登入碼」，在 App 按貼上圖示。Safari 與主畫面 App 的儲存空間不共用，所以這一步不能省。</span></li>
+        </ol>
+      </div>
+
+      <div class="os-panel" data-os="pc">
+        <ol class="steps">
+          <li><b>加 LINE 好友</b><span>用手機掃右邊的 QR，或在 LINE 電腦版搜尋 @408csebn。</span></li>
+          <li><b>點訊息裡的「開始使用」</b><span>瀏覽器會直接登入，不需要輸入任何東西。</span></li>
+          <li><b>推播請在手機上安裝</b><span>電腦版可以看分數、統計與 K 線。盤中訊號要推到身上，還是得在手機加入主畫面。</span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="start-foot">
+      <div class="qr-box">
+        <img src="line-qr.svg" width="132" height="132" alt="加 CapitalGuard LINE 官方帳號好友的 QR code" loading="lazy">
+        <div>
+          <b>用手機掃這個 QR</b>
+          <p class="muted">官方帳號 <span class="mono">@408csebn</span>（CapitalGuard-股票追蹤）。加好友後在聊天室傳「登入」，隨時可以重拿一組新的登入碼。</p>
+        </div>
+      </div>
+      <a class="btn btn-primary btn-lg" href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-steps">加 LINE 好友，免費開始</a>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="rhythm">
   <div class="wrap">
     <div class="section-head">
@@ -71,7 +130,7 @@
       <div class="clock-item">
         <div class="clock-time">06:15</div>
         <h3>每日評分報告</h3>
-        <p>近兩千檔上市櫃股票重新計算 0–100 分，附 12 個子項分數、前期對照與變化原因。</p>
+        <p>日均成交金額 500 萬以上的上市櫃股票重新計算 0–100 分，附 12 個子項分數、前期對照與變化原因。</p>
       </div>
       <div class="clock-item">
         <div class="clock-time">09:00–13:30</div>
@@ -134,6 +193,53 @@
   </div>
 </section>
 
+<section class="section" id="screens">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">App 長這樣</span>
+      <h2>三個畫面，一天就用得到。</h2>
+      <p class="lead">下面是 App 的實際畫面，不是設計稿。用一個只放三檔股票的示範帳號截的，沒有任何使用者的資料。</p>
+    </div>
+    <div class="screens">
+      <figure>
+        <img src="shot-watch.webp" width="1040" height="1240" loading="lazy" decoding="async"
+             alt="自選股畫面：每檔顯示現價、壓力與支撐的距離、月線與季線位置，台積電那一列另有持股與損益">
+        <figcaption><b>自選股</b>每檔直接寫出壓力與支撐還差多少、月線季線在哪。填了股數與成本的那一檔多一列損益。</figcaption>
+      </figure>
+      <figure>
+        <img src="shot-inbox.webp" width="1040" height="1193" loading="lazy" decoding="async"
+             alt="通知匣畫面：依日期分組的通知列表，橘色為關卡已觸發，藍色為接近關卡或量能變化">
+        <figcaption><b>通知匣</b>推播送出的每一則都留在這裡，依日期分組。橘色是關卡已經觸發，藍色是接近或量能變化。</figcaption>
+      </figure>
+      <figure>
+        <img src="shot-scores.webp" width="1040" height="918" loading="lazy" decoding="async"
+             alt="統計整理畫面：自選股的當日分數、與前期的差、產業別與即時報價">
+        <figcaption><b>統計整理</b>自選股的當日分數與前期差距。要看 12 個子項與變化原因就點進完整報告。</figcaption>
+      </figure>
+    </div>
+    <p class="dim" style="margin-top:1.4rem;font-size:0.88rem">示範帳號的畫面，報價與分數為擷取當下的資料，不是即時報價。</p>
+  </div>
+</section>
+
+<section class="section" id="facts">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">這台機器有多大</span>
+      <h2>不是一個人看著幾檔股票。</h2>
+      <p class="lead">下面是系統每個交易日實際在做的事，數字取自 2026-09-15 的運行結果。</p>
+    </div>
+    <ul class="facts">
+      <li><b>1,166</b><span>檔股票每日重新計分</span><i>日均成交金額 500 萬以上的上市櫃個股</i></li>
+      <li><b>2,150</b><span>檔可搜尋與設定通知</span><i>全部上市櫃，含不計分的冷門股</i></li>
+      <li><b>12</b><span>個評分子項</span><i>基本面 5 項＋技術量能 7 項，各有前期對照</i></li>
+      <li><b>21</b><span>種自訂規則條件</span><i>價量、技術指標、法人籌碼、財報，可組合</i></li>
+      <li><b>5 秒</b><span>盤中更新一輪</span><i>自選股報價與支撐壓力關卡狀態</i></li>
+      <li><b>15 秒</b><span>訊號送達手機</span><i>從判定成立到推播離開伺服器</i></li>
+    </ul>
+    <p class="dim" style="margin-top:1.4rem;font-size:0.88rem">資料來自證券交易所、櫃買中心與公開資訊觀測站等公開來源，可能延遲、缺漏或有誤。</p>
+  </div>
+</section>
+
 <section class="section" id="pricing">
   <div class="wrap">
     <div class="section-head">
@@ -154,7 +260,7 @@
       <li class="no">AI 事件解讀</li>
       <li class="no">AI 問答</li>
     </ul>
-    <a class="btn btn-ghost" href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html">免費開始</a>
+    <a class="btn btn-ghost" href="https://line.me/R/ti/p/@408csebn" data-cg="plan-free">加 LINE 好友，免費開始</a>
   </div>
   <div class="plan lift">
     <div class="plan-name">Basic<b>基本版</b></div>
@@ -168,7 +274,7 @@
       <li class="no">AI 事件解讀</li>
       <li class="no">AI 問答</li>
     </ul>
-    <a class="btn btn-primary" href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html">登入後升級</a>
+    <a class="btn btn-primary" href="https://line.me/R/ti/p/@408csebn" data-cg="plan-basic">加 LINE 好友開始</a>
   </div>
   <div class="plan">
     <div class="plan-name">Pro<b>專業版</b></div>
@@ -182,10 +288,10 @@
       <li>AI 事件解讀 <span class="tag tag-soon">開發中</span></li>
       <li>AI 問答，每日 200 次 <span class="tag tag-soon">開發中</span></li>
     </ul>
-    <a class="btn btn-ghost" href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html">登入後升級</a>
+    <a class="btn btn-ghost" href="https://line.me/R/ti/p/@408csebn" data-cg="plan-pro">加 LINE 好友開始</a>
   </div>
 </div>
-    <p class="muted" style="margin-top:1.5rem">完整比較表、付款方式與退款政策見 <a href="pricing.html">方案與價格</a>。</p>
+    <p class="muted" style="margin-top:1.5rem">完整比較表、付款方式與退款政策見 <a href="pricing.html">方案與價格</a>。<br>已經在用了？<a href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html" data-cg="open-app">開啟 App</a>，在「方案與用量」面板升級。線上付款開放前，升級請<a href="mailto:howard.chen@betewo.com?subject=CapitalGuard%20%E5%8D%87%E7%B4%9A%E7%94%B3%E8%AB%8B">來信</a>，我們會手動開通。</p>
   </div>
 </section>
 
@@ -202,7 +308,11 @@
       </details>
       <details>
         <summary>用什麼登入？</summary>
-        <div class="a">LINE 掃碼登入，或在手機上直接用 LINE 登入。首次登入會自動建立帳號，不需要設定密碼，也不會讀取你的 LINE 聊天內容。</div>
+        <div class="a">加 LINE 官方帳號好友就會自動建立帳號，LINE 會立刻把登入連結與 8 碼登入碼傳給你，不需要設定密碼。我們只取得你的 LINE 顯示名稱與識別碼，不會讀取你的聊天內容。之後在聊天室傳「登入」或「換手機」，隨時可以重拿一組新的碼。</div>
+      </details>
+      <details>
+        <summary>為什麼一定要加 LINE 好友？</summary>
+        <div class="a">帳號與登入碼都由 LINE 官方帳號發送，這是唯一的註冊入口。好處是不必設密碼、換手機時在聊天室傳「登入」就能重拿一組碼。加好友之後我們只會傳登入與帳號相關的訊息，盤中與盤後的提醒走手機的推播通知，不會洗你的聊天室。</div>
       </details>
       <details>
         <summary>通知怎麼送到手機？</summary>
@@ -221,6 +331,7 @@
         <div class="a">不是。CapitalGuard 是公開市場資料的整理與統計工具，所有分數、訊號、事件、篩選結果與 AI 說明都是資料計算的呈現，不對任何股票做買賣、持有或進出場的推介。本服務並非證券投資顧問事業，投資決策請自行判斷。</div>
       </details>
     </div>
+    <p style="margin-top:2rem"><a href="faq.html">看完整常見問題（24 題）→</a></p>
   </div>
 </section>
 
@@ -229,9 +340,9 @@
     <div class="cta-band">
       <div>
         <h2>把盯盤這件事交給推播。</h2>
-        <p>LINE 掃碼 30 秒開始，3 檔自選股免費，隨時升級。</p>
+        <p>加 LINE 好友就開始，3 檔自選股免費，沒有期限。</p>
       </div>
-      <a class="btn btn-primary btn-lg" href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html">開啟 App</a>
+      <a class="btn btn-primary btn-lg" href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-foot">加 LINE 好友，免費開始</a>
     </div>
     <div class="notice" style="margin-top:2rem">
       <b>使用前請先確認</b>　CapitalGuard 是公開市場資料的整理與統計工具。所有分數、訊號、事件、篩選結果與 AI 說明，都是資料計算的呈現，<b>不是投資建議</b>，也不對任何股票做買賣、持有或進出場的推介。本服務並非證券投資顧問事業，不提供個別化投資諮詢。資料可能延遲、缺漏或有誤，推播不保證即時送達。投資決策請自行判斷並承擔全部風險。
@@ -250,7 +361,9 @@
       <ul>
         <li><a href="features.html">功能</a></li>
         <li><a href="pricing.html">方案與價格</a></li>
-        <li><a href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html">開啟 App</a></li>
+        <li><a href="faq.html">常見問題</a></li>
+        <li><a href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html" data-cg="open-app">開啟 App</a></li>
+        <li><a href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-foot-nav">加 LINE 好友</a></li>
       </ul>
     </div>
     <div class="foot-col">
@@ -281,5 +394,6 @@
   });
 })();
 </script>
+<script src="analytics.js?v=1" defer></script>
 </body>
 </html>

@@ -444,3 +444,21 @@ table.compare th.lift, table.compare td.lift { background: rgba(139, 124, 255, 0
 .screens figcaption { margin-top: 0.9rem; color: var(--muted); font-size: 0.92rem; }
 .screens figcaption b { color: var(--text); display: block; margin-bottom: 0.2rem; }
 @media (max-width: 860px) { .screens { grid-template-columns: 1fr; gap: 2.5rem; max-width: 420px; margin-inline: auto; } }
+
+/* 一個交易日的例子：左邊時間軸截圖、右邊四個編號標註 */
+.example { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 300px) 1fr; gap: 2rem; align-items: start; }
+.example figure { margin: 0; }
+.example img { width: 100%; height: auto; border-radius: 22px; border: 1px solid rgba(146, 146, 163, 0.2); box-shadow: var(--shadow-soft); display: block; }
+.example figcaption { margin-top: 0.9rem; color: var(--muted); font-size: 0.92rem; }
+.example figcaption b { color: var(--text); display: block; margin-bottom: 0.2rem; }
+.example-calls { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.9rem; }
+.example-calls li { display: flex; gap: 0.9rem; align-items: flex-start; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(146, 146, 163, 0.2); border-radius: 16px; padding: 0.9rem 1rem; }
+.example-calls b { display: block; color: var(--text); font-size: 1rem; margin-bottom: 0.2rem; }
+.example-calls div { color: var(--muted); font-size: 0.93rem; line-height: 1.6; }
+.pin { flex: 0 0 28px; width: 28px; height: 28px; border-radius: 50%; background: var(--accent-2); color: #1f1b3a; font-weight: 800; font-size: 0.9rem; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 4px rgba(245, 197, 66, 0.22); }
+.pin.pin-alt { background: var(--accent); color: #fff; box-shadow: 0 0 0 4px rgba(139, 124, 255, 0.22); }
+.cells { display: inline-flex; gap: 3px; vertical-align: middle; margin: 0 0.5rem; }
+.cells i { width: 14px; height: 14px; border-radius: 3px; background: #56a8ff; color: #0b0b13; font-style: normal; font-size: 0.6rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; }
+.cells i.off { background: transparent; border: 1px solid rgba(146, 146, 163, 0.4); }
+@media (max-width: 1100px) { .example { grid-template-columns: 1fr 1fr; } .example-calls { grid-column: 1 / -1; } }
+@media (max-width: 860px) { .example { grid-template-columns: 1fr; gap: 1.8rem; } .example figure { max-width: 380px; margin-inline: auto; } }

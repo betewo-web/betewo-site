@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
-<link rel="stylesheet" href="site.css?v=4">
+<link rel="stylesheet" href="site.css?v=5">
 </head>
 <body>
 <header class="site-head">
@@ -218,6 +218,35 @@
       </figure>
     </div>
     <p class="dim" style="margin-top:1.4rem;font-size:0.88rem">示範帳號的畫面，報價與分數為擷取當下的資料，不是即時報價。</p>
+  </div>
+</section>
+
+<section class="section" id="example">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">一個交易日的例子</span>
+      <h2>不用盯盤，也知道 09:07 發生了什麼。</h2>
+      <p class="lead">以 2026-09-21 聯發科為例。開盤六分鐘內系統看到六件事，其中兩件推到手機，四件留在雷達裡供回看。下面是 App 當天的實際畫面，用示範帳號截的。</p>
+    </div>
+    <div class="example">
+      <figure>
+        <img src="shot-example-timeline.webp" width="1040" height="1500" loading="lazy" decoding="async"
+             alt="盤中時間軸畫面：2026-09-21 聯發科 09:01 逼近壓力、突破 20 日高，09:07 突破壓力、漲幅超過 5%、突破 52 週高、RSI 高於 70，依發生順序排在圖上與清單裡">
+        <figcaption><b>盤中時間軸</b>一天的訊號依發生順序排開；縱向是價位，虛線是當天用到的關卡。</figcaption>
+      </figure>
+      <figure>
+        <img src="shot-example-home.webp" width="1040" height="1240" loading="lazy" decoding="async"
+             alt="首頁畫面：三檔自選股各有一排近 10 個交易日的格子，格子裡是那天的訊號數；聯發科最右格是今天的 6">
+        <figcaption><b>首頁</b>每檔近 10 個交易日各有幾則，最右一格是今天。點任何一格就回到那一天的時間軸。</figcaption>
+      </figure>
+      <ol class="example-calls">
+        <li><span class="pin">1</span><div><b>09:01 開盤一分鐘</b>現價 4,840 離壓力 4,870 只差 0.6%，系統先發「逼近壓力」。這一則是預告：接下來幾分鐘值得看一眼。</div></li>
+        <li><span class="pin">2</span><div><b>09:07 站上 4,870</b>「突破壓力」推到手機。你在開會、在通勤，也在同一分鐘知道這件事，而不是收盤後才發現。</div></li>
+        <li><span class="pin">3</span><div><b>同一分鐘還有三件</b>漲幅超過 5%、突破 52 週高、RSI 高於 70 一起成立。這三件不推播、只記在雷達裡：推播只留給你設定的那幾種，其餘的等你有空再看。</div></li>
+        <li><span class="pin pin-alt">4</span><div><b>近 10 天的脈絡</b>首頁每檔右側有一排格子，一格是一個交易日的訊號數。一眼看出哪幾檔最近特別多事，點任何一格回看那一天，不必翻通知匣。</div></li>
+      </ol>
+    </div>
+    <p class="dim" style="margin-top:1.4rem;font-size:0.88rem">以上是系統對資料的描述，不是對股票的判斷，也不是買賣建議。範例來自公開的盤中資料與示範帳號，不含任何使用者的自選股。</p>
   </div>
 </section>
 

@@ -110,7 +110,10 @@ p + p { margin-top: 1em; }
 .brand-sub { font-size: 0.8rem; color: var(--muted); padding-left: 0.6rem; border-left: 1px solid var(--border-strong); line-height: 1; }
 .site-nav { display: flex; align-items: center; gap: 1.6rem; }
 .site-nav a:not(.btn) { color: var(--muted); font-weight: 500; font-size: 0.95rem; }
-.nav-app { white-space: nowrap; }
+/* 「開啟 App」對還沒註冊的人是死路（那一頁要 LINE 傳出的 8 碼登入碼），
+   所以它比加好友低一階，並且自己說明是給誰用的。 */
+.nav-app { white-space: nowrap; display: inline-flex; align-items: baseline; gap: 0.4rem; }
+.nav-app small { font-size: 0.72rem; color: var(--dim); border: 1px solid var(--border); border-radius: 999px; padding: 0.05rem 0.4rem; }
 .site-nav a:not(.btn):hover, .site-nav a[aria-current="page"] { color: var(--text); text-decoration: none; }
 .site-nav a[aria-current="page"] { position: relative; }
 .site-nav a[aria-current="page"]::after {
@@ -148,6 +151,8 @@ p + p { margin-top: 1em; }
 .hero .wrap { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
 .hero-copy h1 { margin-bottom: 1.2rem; }
 .hero-copy .lead { font-size: 1.15rem; }
+/* 讓對的人三秒內認出自己——沒有這一句，訪客得自己猜這是不是在講他 */
+.hero-who { margin-top: 1rem; font-size: 0.98rem; color: var(--muted); border-left: 2px solid var(--accent); padding-left: 0.85rem; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; margin-top: 2rem; }
 .hero-note { margin-top: 1rem; font-size: 0.88rem; color: var(--dim); }
 .hero-note b { color: var(--muted); font-weight: 500; }
@@ -156,51 +161,31 @@ p + p { margin-top: 1em; }
   .hero-visual { justify-self: center; width: 100%; max-width: 420px; }
 }
 
-/* ── 手機示意（通知匣）── */
-.phone {
-  background: var(--bg-2);
-  border: 1px solid var(--border-strong);
-  border-radius: 30px;
-  padding: 1.1rem 1rem 1.2rem;
-  box-shadow: var(--shadow-lift);
-  position: relative;
+/* ── Hero 的真實截圖 + 推播示意 ──
+   說服的順序：最需要證據的位置放實際畫面，不放示意圖。
+   浮在截圖上的那張卡片是唯一的示意物，用來講「訊號走手機推播，不是 LINE 訊息」。 */
+.hero-shot { position: relative; margin: 0; }
+.hero-shot img {
+  width: 100%; height: auto; display: block;
+  border-radius: 20px; border: 1px solid var(--border-strong); box-shadow: var(--shadow-lift);
 }
-.phone-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.9rem; padding: 0 0.25rem; }
-.phone-top .title { font-weight: 700; font-size: 0.95rem; }
-.live { display: inline-flex; align-items: center; gap: 0.4rem; font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; color: var(--accent); }
-.live::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 0 rgba(139, 124, 255, 0.6); animation: pulse 2s infinite; }
-@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(139, 124, 255, 0.55); } 70% { box-shadow: 0 0 0 8px rgba(139, 124, 255, 0); } 100% { box-shadow: 0 0 0 0 rgba(139, 124, 255, 0); } }
-@media (prefers-reduced-motion: reduce) { .live::before { animation: none; } }
-.feed { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.45rem; }
-.sig {
-  display: grid; grid-template-columns: 40px 1fr auto; gap: 0.7rem; align-items: center;
-  background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 0.6rem 0.75rem;
-  border-left-width: 3px;
+.hero-shot figcaption { margin-top: 0.75rem; text-align: center; font-size: 0.75rem; color: var(--dim); }
+.push-card {
+  /* 靠右浮：卡片蓋掉的是截圖右上角的「看 K 線／關閉」，
+     左邊的「聯發科 2026-09-21」要留著——那是這張圖唯一的證據標示。 */
+  position: absolute; z-index: 2; left: 24%; right: -6%; top: -26px;
+  background: var(--surface-2); border: 1px solid var(--border-strong); border-radius: 16px;
+  padding: 0.7rem 0.85rem 0.75rem; box-shadow: var(--shadow-lift);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
 }
-.sig[data-sev="orange"] { border-left-color: var(--sig-orange); }
-.sig[data-sev="blue"] { border-left-color: var(--sig-blue); }
-.sig[data-sev="info"] { border-left-color: var(--sig-info); }
-.sig-tile { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; font-size: 1.25rem; background: var(--surface-2); font-family: var(--font-mono); font-weight: 700; color: var(--sig-info); }
-.sig[data-sev="orange"] .sig-tile { background: rgba(255, 159, 67, 0.16); color: var(--sig-orange); }
-.sig[data-sev="blue"] .sig-tile { background: rgba(86, 168, 255, 0.16); color: var(--sig-blue); }
-.sig-body { min-width: 0; }
-.sig-head { display: flex; gap: 0.45rem; align-items: baseline; font-size: 0.9rem; }
-.sig-code { font-family: var(--font-mono); color: var(--muted); font-size: 0.8rem; }
-.sig-name { font-weight: 700; }
-.sig-text { font-size: 0.82rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.sig-meta { text-align: right; font-family: var(--font-mono); font-size: 0.78rem; line-height: 1.5; color: var(--dim); font-variant-numeric: tabular-nums; }
-.chg-up { color: var(--chg-up); }
-.chg-down { color: var(--chg-down); }
-.phone-caption { margin-top: 0.8rem; text-align: center; font-size: 0.75rem; color: var(--dim); }
-.score-chip {
-  position: absolute; top: -18px; right: -14px;
-  background: var(--surface-2); border: 1px solid var(--border-strong); border-radius: 14px;
-  padding: 0.55rem 0.8rem; box-shadow: var(--shadow-soft);
-  font-family: var(--font-mono); font-size: 0.72rem; line-height: 1.4; color: var(--muted);
-}
-.score-chip b { display: block; color: var(--text); font-size: 1.05rem; font-family: var(--font-display); }
-.score-chip .grade { color: var(--accent); font-weight: 700; }
-@media (max-width: 480px) { .score-chip { right: 0; top: -22px; } }
+.push-head { display: flex; align-items: center; gap: 0.45rem; font-size: 0.72rem; color: var(--dim); }
+.push-icon { width: 16px; height: 16px; border-radius: 5px; flex: none; }
+.push-app { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.push-time { margin-left: auto; font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.push-title { margin-top: 0.35rem; font-weight: 700; font-size: 0.98rem; }
+.push-sub { margin-top: 0.2rem; font-size: 0.72rem; color: var(--muted); }
+@media (max-width: 900px) { .push-card { left: 14%; right: -2%; top: -20px; } }
+@media (max-width: 480px) { .push-card { left: 8%; right: 0; } .push-title { font-size: 0.92rem; } }
 
 /* ── 一天的節奏（時間軸）── */
 .clock { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; position: relative; }
@@ -218,6 +203,19 @@ p + p { margin-top: 1em; }
   .clock-item { padding: 0 0 1.8rem 2rem; }
   .clock-item::before { top: 6px; }
 }
+
+/* ── 通知怎麼來（LINE 只做認證）── */
+.notify { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.notify-step { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.4rem 1.5rem; }
+.notify-k {
+  display: inline-block; margin-bottom: 0.9rem;
+  font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.1em;
+  color: var(--accent); border: 1px solid rgba(139, 124, 255, 0.5); border-radius: 999px; padding: 0.15rem 0.65rem;
+}
+.notify-step h3 { margin-bottom: 0.5rem; font-size: 1.05rem; }
+.notify-step p { color: var(--muted); font-size: 0.95rem; }
+.notify-foot { margin-top: 1.8rem; }
+@media (max-width: 860px) { .notify { grid-template-columns: 1fr; gap: 1.1rem; } }
 
 /* ── 功能格 ── */
 .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.2rem 2.5rem; }

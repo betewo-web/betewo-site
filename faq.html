@@ -21,12 +21,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
-<link rel="stylesheet" href="site.css?v=6">
+<link rel="stylesheet" href="site.css?v=7">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
  "@type": "FAQPage",
  "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "加了 LINE 好友，會一直收到 LINE 訊息嗎？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "不會。官方帳號只傳登入與帳號相關的訊息——加好友當下那一則，以及你自己在聊天室要求「登入」時的新登入碼。股票的分數、盤中訊號、盤後事件一則都不會傳進 LINE，全部走手機的推播通知，直接進通知中心。"
+   }
+  },
   {
    "@type": "Question",
    "name": "需要下載 App 嗎？",
@@ -40,7 +48,7 @@
    "name": "為什麼一定要加 LINE 好友？",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "帳號與登入碼都由 LINE 官方帳號發送，這是唯一的註冊入口。加好友的當下帳號就建立完成，不必設密碼，換手機時傳一句話就能重拿登入碼。加好友之後我們只傳登入與帳號相關的訊息，盤中與盤後的提醒走手機的推播通知，不會洗你的聊天室。"
+    "text": "帳號與登入碼都由 LINE 官方帳號發送，這是唯一的註冊入口。加好友的當下帳號就建立完成，不必設密碼、不必填 Email，換手機時傳一句話就能重拿登入碼。LINE 只負責認證這一件事——盤中訊號、盤後事件與每日報告一律走手機的推播通知，不會進你的 LINE 聊天室。"
    }
   },
   {
@@ -254,12 +262,16 @@
     <div class="section-head"><h2>開始使用</h2></div>
     <div class="faq">
       <details>
+        <summary>加了 LINE 好友，會一直收到 LINE 訊息嗎？</summary>
+        <div class="a">不會。官方帳號只傳登入與帳號相關的訊息——加好友當下那一則，以及你自己在聊天室要求「登入」時的新登入碼。股票的分數、盤中訊號、盤後事件一則都不會傳進 LINE，全部走手機的推播通知，直接進通知中心。</div>
+      </details>
+      <details>
         <summary>需要下載 App 嗎？</summary>
         <div class="a">不用。CapitalGuard 是網頁應用程式（PWA），加入手機主畫面之後就像一般 App 一樣有圖示、全螢幕開啟、收得到推播通知。不必經過 App Store，也不必手動更新。</div>
       </details>
       <details>
         <summary>為什麼一定要加 LINE 好友？</summary>
-        <div class="a">帳號與登入碼都由 LINE 官方帳號發送，這是唯一的註冊入口。加好友的當下帳號就建立完成，不必設密碼，換手機時傳一句話就能重拿登入碼。加好友之後我們只傳登入與帳號相關的訊息，盤中與盤後的提醒走手機的推播通知，不會洗你的聊天室。</div>
+        <div class="a">帳號與登入碼都由 LINE 官方帳號發送，這是唯一的註冊入口。加好友的當下帳號就建立完成，不必設密碼、不必填 Email，換手機時傳一句話就能重拿登入碼。LINE 只負責認證這一件事——盤中訊號、盤後事件與每日報告一律走手機的推播通知，不會進你的 LINE 聊天室。</div>
       </details>
       <details>
         <summary>iPhone 要怎麼才收得到通知？</summary>
@@ -392,7 +404,7 @@
         <h2>問題解決了就開始吧。</h2>
         <p>加 LINE 好友，3 檔自選股免費，沒有期限。</p>
       </div>
-      <a class="btn btn-primary btn-lg" href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-foot">加 LINE 好友，免費開始</a>
+      <a class="btn btn-primary btn-lg" href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-foot">加 LINE 好友，30 秒開始</a>
     </div>
   </div>
 </section>

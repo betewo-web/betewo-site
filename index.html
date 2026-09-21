@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CapitalGuard 台股監控</title>
-<meta name="description" content="台股上市櫃一千一百多檔每日 0–100 分數，自選股盤中支撐壓力、爆量、漲跌停 15 秒內推播到手機。加 LINE 好友即可開始，免費方案沒有期限。">
+<title>台股盤中訊號推播｜跌破支撐、爆量、漲跌停通知 - CapitalGuard</title>
+<meta name="description" content="不用盯盤，也知道盤中發生了什麼。自選股跌破支撐、爆量、漲跌停，條件成立 15 秒內推到手機。LINE 只用來建立帳號，股票通知走手機推播不經 LINE。免費方案沒有期限。">
 <link rel="canonical" href="https://betewo-web.github.io/betewo-site/index.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="CapitalGuard 台股監控">
-<meta property="og:title" content="CapitalGuard 台股監控">
-<meta property="og:description" content="台股上市櫃一千一百多檔每日 0–100 分數，自選股盤中支撐壓力、爆量、漲跌停 15 秒內推播到手機。加 LINE 好友即可開始，免費方案沒有期限。">
+<meta property="og:title" content="不用盯盤，也知道 09:07 發生了什麼。">
+<meta property="og:description" content="自選股跌破支撐、爆量、漲跌停，條件成立 15 秒內推到手機。LINE 只用來建立帳號，股票通知走手機推播不經 LINE。免費方案沒有期限。">
 <meta property="og:url" content="https://betewo-web.github.io/betewo-site/index.html">
 <meta property="og:image" content="https://betewo-web.github.io/betewo-site/og-cover.png">
 <meta property="og:image:width" content="1200">
@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
-<link rel="stylesheet" href="site.css?v=6">
+<link rel="stylesheet" href="site.css?v=7">
 </head>
 <body>
 <header class="site-head">
@@ -29,7 +29,7 @@
     <a class="brand" href="index.html" aria-label="CapitalGuard 首頁"><svg class="brand-mark" viewBox="0 0 512 512" aria-hidden="true"><rect width="512" height="512" rx="96" fill="#14122a"/><g fill="none" stroke-linecap="round"><circle cx="256" cy="256" r="139" stroke="#8b7cff" stroke-width="25"/><circle cx="256" cy="256" r="84" stroke="#c4b5fd" stroke-width="22"/><path stroke="#f5c542" stroke-width="13" d="M256 70V49M442 256h21M256 442v21M70 256H49"/><path stroke="#f5c542" stroke-width="20" d="M227 256h58M256 227v58"/></g></svg><span class="brand-name">CapitalGuard</span><span class="brand-sub">台股監控</span></a>
     <nav class="site-nav" id="site-nav" aria-label="主選單">
       <a href="features.html">功能</a> <a href="pricing.html">方案與價格</a> <a href="faq.html">常見問題</a> <a href="contact.html">聯絡</a>
-      <a class="nav-app" href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html" data-cg="open-app">開啟 App</a>
+      <a class="nav-app" href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html" data-cg="open-app">開啟 App<small>已註冊</small></a>
       <a class="btn btn-primary btn-sm" href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-nav">加 LINE 好友</a>
     </nav>
     <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">選單</button>
@@ -39,83 +39,117 @@
 <section class="hero">
   <div class="wrap">
     <div class="hero-copy">
-      <span class="eyebrow">台股 上市／上櫃 全市場每日分數 · 盤中訊號</span>
-      <h1>每天 06:15，上市櫃一千一百多檔重新統計一次。</h1>
-      <p class="lead">盤中持續盯著自選股與支撐壓力的相對位置。跌破支撐、帶量上漲、漲跌停，條件成立就推到手機，不用整天開著看盤軟體。</p>
+      <span class="eyebrow">台股 上市／上櫃 · 盤中訊號推播到手機</span>
+      <h1>不用盯盤，也知道 09:07 發生了什麼。</h1>
+      <p class="lead">09:01 聯發科離壓力還差 0.6%，系統先提醒一次；09:07 站上 4,870，通知直接推到手機。你在上班、在開會，也在同一分鐘知道。</p>
+      <p class="hero-who">給有正職、持股加觀察名單 5–20 檔、沒辦法整天開著看盤軟體的人。</p>
       <div class="hero-cta">
-        <a class="btn btn-primary btn-lg" href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-hero">加 LINE 好友，免費開始</a>
-        <a class="btn btn-ghost btn-lg" href="#start">怎麼開始？</a>
+        <a class="btn btn-primary btn-lg" href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-hero">加 LINE 好友，30 秒開始</a>
+        <a class="btn btn-ghost btn-lg" href="#example">看完整的一天 →</a>
       </div>
-      <p class="hero-note"><b>加 LINE 好友即可登入</b>，不用下載、不用設密碼。免費方案含 3 檔自選股與全部盤中、盤後通知，沒有期限。</p>
+      <p class="hero-note"><b>LINE 只用來建立帳號與登入，不會傳股票訊息給你</b>——訊號全部走手機推播，和 LINE 聊天室無關。免費方案 3 檔自選股，沒有期限。</p>
     </div>
     <div class="hero-visual">
-      <div class="phone" aria-label="通知匣示意">
-        <div class="score-chip">2330 台積電 · 今日分數<b>82 <span class="grade">較前期 +3</span></b></div>
-        <div class="phone-top"><span class="title">通知</span><span class="live">LIVE 10:42</span></div>
-        <ul class="feed">
-          <li class="sig" data-sev="orange"><div class="sig-tile" aria-hidden="true">↓</div><div class="sig-body"><div class="sig-head"><span class="sig-code">2330</span><span class="sig-name">台積電</span></div><div class="sig-text">跌破支撐 1,045，已連續兩輪確認</div></div><div class="sig-meta">10:42<br><span class="chg-down">−1.8%</span></div></li>
-          <li class="sig" data-sev="blue"><div class="sig-tile" aria-hidden="true">≋</div><div class="sig-body"><div class="sig-head"><span class="sig-code">2454</span><span class="sig-name">聯發科</span></div><div class="sig-text">開盤後 102 分鐘累計 18,200 張，為 20 日均量的 1.60 倍</div></div><div class="sig-meta">10:31<br><span class="chg-up">+2.4%</span></div></li>
-          <li class="sig" data-sev="orange"><div class="sig-tile" aria-hidden="true">▲</div><div class="sig-body"><div class="sig-head"><span class="sig-code">3037</span><span class="sig-name">欣興</span></div><div class="sig-text">漲停鎖住，委買 12,480 張</div></div><div class="sig-meta">09:58<br><span class="chg-up">+10.0%</span></div></li>
-          <li class="sig" data-sev="blue"><div class="sig-tile" aria-hidden="true">↗</div><div class="sig-body"><div class="sig-head"><span class="sig-code">2317</span><span class="sig-name">鴻海</span></div><div class="sig-text">逼近壓力 206，距離 0.6%</div></div><div class="sig-meta">09:47<br><span class="chg-up">+1.2%</span></div></li>
-          <li class="sig" data-sev="info"><div class="sig-tile" aria-hidden="true">▤</div><div class="sig-body"><div class="sig-head"><span class="sig-code">06:15</span><span class="sig-name">每日評分報告</span></div><div class="sig-text">自選股 5 檔分數已更新，2 檔變動超過 3 分</div></div><div class="sig-meta">06:15</div></li>
-        </ul>
-        <p class="phone-caption">示意畫面，非即時報價</p>
-      </div>
+      <figure class="hero-shot">
+        <div class="push-card">
+          <div class="push-head">
+            <svg class="push-icon" viewBox="0 0 512 512" aria-hidden="true"><rect width="512" height="512" rx="96" fill="#14122a"/><g fill="none" stroke-linecap="round"><circle cx="256" cy="256" r="139" stroke="#8b7cff" stroke-width="34"/><circle cx="256" cy="256" r="84" stroke="#c4b5fd" stroke-width="30"/><path stroke="#f5c542" stroke-width="26" d="M227 256h58M256 227v58"/></g></svg>
+            <span class="push-app">CapitalGuard 台股監控</span>
+            <span class="push-time">09:07</span>
+          </div>
+          <div class="push-title">聯發科 突破壓力 4,870</div>
+          <div class="push-sub">手機推播通知 · 不是 LINE 訊息</div>
+        </div>
+        <img src="shot-hero-timeline.webp" width="1040" height="1018" fetchpriority="high" decoding="async"
+             alt="App 的盤中時間軸畫面：2026-09-21 聯發科，09:01 逼近壓力與突破 20 日高，09:07 突破壓力、漲幅超過 5%、突破 52 週高、RSI 高於 70，六個圖示依發生順序排在關卡虛線上">
+        <figcaption>2026-09-21 聯發科的盤中時間軸，示範帳號的實際畫面；上方推播為示意。</figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
-<section class="section" id="start">
+<section class="section" id="example">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">怎麼開始</span>
-      <h2>三個步驟，大約三分鐘。</h2>
-      <p class="lead">加好友之後，LINE 會立刻傳一則訊息給你，裡面有「開始使用」的連結和 8 碼登入碼。剩下的照你的手機做一次就好。</p>
+      <span class="eyebrow">一個交易日的例子</span>
+      <h2>09:07 那一分鐘，你在開會。</h2>
+      <p class="lead">2026-09-21 聯發科。開盤六分鐘內系統看到六件事：09:01 先預告，09:07 推到你手機，另外四件不吵你、留在雷達裡等你有空再看。下面是 App 當天的實際畫面，用示範帳號截的。</p>
     </div>
+    <div class="example">
+      <figure>
+        <img src="shot-example-timeline.webp" width="1040" height="1500" loading="lazy" decoding="async"
+             alt="盤中時間軸畫面：2026-09-21 聯發科 09:01 逼近壓力、突破 20 日高，09:07 突破壓力、漲幅超過 5%、突破 52 週高、RSI 高於 70，依發生順序排在圖上與清單裡">
+        <figcaption><b>盤中時間軸</b>一天的訊號依發生順序排開；縱向是價位，虛線是當天用到的關卡。</figcaption>
+      </figure>
+      <figure>
+        <img src="shot-example-home.webp" width="1040" height="724" loading="lazy" decoding="async"
+             alt="首頁畫面：三檔自選股各有一排近 10 個交易日的格子，格子裡是那天的訊號數；聯發科最右格是今天的 6">
+        <figcaption><b>首頁</b>每檔近 10 個交易日各有幾則，最右一格是今天。點任何一格就回到那一天的時間軸。</figcaption>
+      </figure>
+      <ol class="example-calls">
+        <li><span class="pin">1</span><div><b>09:01 開盤一分鐘</b>價格離壓力 4,870 只差 0.6%，系統先發「逼近壓力」。這一則是預告：接下來幾分鐘值得看一眼。</div></li>
+        <li><span class="pin">2</span><div><b>09:07 站上 4,870</b>「突破壓力」推到手機——是手機自己的推播通知，不是 LINE 訊息。你在開會、在通勤，手機震一下就知道，而不是收盤後才發現。</div></li>
+        <li><span class="pin">3</span><div><b>同一分鐘還有三件</b>漲幅超過 5%、突破 52 週高、RSI 高於 70 一起成立。這三件不推播、只記在雷達裡——哪幾種要吵你，由你自己設定，其餘的等你有空再看。</div></li>
+        <li><span class="pin pin-alt">4</span><div><b>近 10 天的脈絡</b>首頁每檔右側有一排格子，一格是一個交易日的訊號數。一眼看出哪幾檔最近特別多事，點任何一格回看那一天，不必翻通知匣。</div></li>
+      </ol>
+    </div>
+    <p class="dim" style="margin-top:1.4rem;font-size:0.88rem">以上是系統對資料的描述，不是對股票的判斷，也不是買賣建議。範例來自公開的盤中資料與示範帳號，不含任何使用者的自選股。</p>
+  </div>
+</section>
 
-    <div class="os-tabs">
-      <input type="radio" name="os" id="os-android" checked>
-      <label for="os-android">Android</label>
-      <input type="radio" name="os" id="os-iphone">
-      <label for="os-iphone">iPhone</label>
-      <input type="radio" name="os" id="os-pc">
-      <label for="os-pc">電腦</label>
-
-      <div class="os-panel" data-os="android">
-        <ol class="steps">
-          <li><b>加 LINE 好友</b><span>點上面的按鈕，或在 LINE 搜尋 @408csebn。加好友的當下帳號就建立完成，訊息會立刻送到。</span></li>
-          <li><b>點「開始使用」，把 App 裝到桌面</b><span>連結會用 Chrome 開啟，照畫面提示選「安裝」或「加入主畫面」。</span></li>
-          <li><b>從桌面開啟，允許通知</b><span>Chrome 與 App 共用登入，通常不必再輸入登入碼。允許通知之後，訊號就會送進手機的通知中心。</span></li>
-        </ol>
+<section class="section" id="notify">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">通知怎麼來</span>
+      <h2>通知走手機，不走 LINE。</h2>
+      <p class="lead">很多人以為這是一個會在群組裡報明牌的 LINE 機器人。不是。LINE 只出現在最開始的三十秒，之後就退場。</p>
+    </div>
+    <div class="notify">
+      <div class="notify-step">
+        <span class="notify-k">1 · LINE</span>
+        <h3>只做一件事：認出你是誰</h3>
+        <p>加好友的當下帳號就建立完成，LINE 立刻把「開始使用」的連結和 8 碼登入碼傳給你。不用下載、不用設密碼、不用填 Email。換手機時在聊天室傳「登入」就能重拿一組。</p>
       </div>
-
-      <div class="os-panel" data-os="iphone">
-        <ol class="steps">
-          <li><b>加 LINE 好友</b><span>點上面的按鈕，或在 LINE 搜尋 @408csebn。加好友的當下帳號就建立完成，訊息會立刻送到。</span></li>
-          <li><b>用 Safari 開連結，先「加入主畫面」</b><span>點下方分享鈕 → 加入主畫面。iPhone 一定要先安裝才收得到推播，需要 iOS 16.4 以上。</span></li>
-          <li><b>從主畫面開啟，貼上 8 碼登入碼</b><span>回 LINE 點「複製登入碼」，在 App 按貼上圖示。Safari 與主畫面 App 的儲存空間不共用，所以這一步不能省。</span></li>
-        </ol>
+      <div class="notify-step">
+        <span class="notify-k">2 · App</span>
+        <h3>把 App 裝到手機桌面</h3>
+        <p>CapitalGuard 是網頁應用程式（PWA），加入主畫面之後就像一般 App 一樣有圖示、全螢幕開啟。不經過 App Store，也不必手動更新。</p>
       </div>
-
-      <div class="os-panel" data-os="pc">
-        <ol class="steps">
-          <li><b>加 LINE 好友</b><span>用手機掃右邊的 QR，或在 LINE 電腦版搜尋 @408csebn。</span></li>
-          <li><b>點訊息裡的「開始使用」</b><span>瀏覽器會直接登入，不需要輸入任何東西。</span></li>
-          <li><b>推播請在手機上安裝</b><span>電腦版可以看分數、統計與 K 線。盤中訊號要推到身上，還是得在手機加入主畫面。</span></li>
-        </ol>
+      <div class="notify-step">
+        <span class="notify-k">3 · 推播</span>
+        <h3>訊號進手機的通知中心</h3>
+        <p>盤中訊號、盤後事件、每日評分報告，全部由瀏覽器的 Web Push 直接送進手機通知中心，鎖定畫面就看得到。不經 LINE，不另外收費。</p>
       </div>
     </div>
+    <p class="notice notify-foot"><b>所以你的 LINE 聊天室不會被洗版。</b>加好友之後，官方帳號只會傳登入與帳號相關的訊息（例如你自己要的一組新登入碼）。股票的事一律走推播通知，一則都不會出現在 LINE 裡。我們也讀不到你的聊天內容，只取得你的 LINE 顯示名稱與識別碼。</p>
+  </div>
+</section>
 
-    <div class="start-foot">
-      <div class="qr-box">
-        <img src="line-qr.svg" width="132" height="132" alt="加 CapitalGuard LINE 官方帳號好友的 QR code" loading="lazy">
-        <div>
-          <b>用手機掃這個 QR</b>
-          <p class="muted">官方帳號 <span class="mono">@408csebn</span>（CapitalGuard-股票追蹤）。加好友後在聊天室傳「登入」，隨時可以重拿一組新的登入碼。</p>
-        </div>
-      </div>
-      <a class="btn btn-primary btn-lg" href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-steps">加 LINE 好友，免費開始</a>
+<section class="section" id="screens">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">App 長這樣</span>
+      <h2>三個畫面，一天就用得到。</h2>
+      <p class="lead">下面是 App 的實際畫面，不是設計稿。用一個只放三檔股票的示範帳號截的，沒有任何使用者的資料。</p>
     </div>
+    <div class="screens">
+      <figure>
+        <img src="shot-watch.webp" width="1040" height="1240" loading="lazy" decoding="async"
+             alt="自選股畫面：每檔顯示與壓力、支撐的距離、月線與季線位置，台積電那一列另有持股與損益">
+        <figcaption><b>自選股</b>每檔直接寫出壓力與支撐還差多少、月線季線在哪。填了股數與成本的那一檔多一列損益。</figcaption>
+      </figure>
+      <figure>
+        <img src="shot-inbox.webp" width="1040" height="1193" loading="lazy" decoding="async"
+             alt="通知匣畫面：依日期分組的通知列表，橘色為關卡已觸發，藍色為接近關卡或量能變化">
+        <figcaption><b>通知匣</b>推播送出的每一則都留在這裡，依日期分組。橘色是關卡已經觸發，藍色是接近或量能變化。</figcaption>
+      </figure>
+      <figure>
+        <img src="shot-scores.webp" width="1040" height="918" loading="lazy" decoding="async"
+             alt="統計整理畫面：自選股的當日分數、與前期的差、產業別">
+        <figcaption><b>統計整理</b>自選股的當日分數與前期差距。要看 12 個子項與變化原因就點進完整報告。</figcaption>
+      </figure>
+    </div>
+    <p class="dim" style="margin-top:1.4rem;font-size:0.88rem">示範帳號的畫面，數字為擷取當下的資料，不是即時行情。</p>
   </div>
 </section>
 
@@ -124,7 +158,7 @@
     <div class="section-head">
       <span class="eyebrow">一個交易日的節奏</span>
       <h2>盤前、盤中、盤後，各做一件事。</h2>
-      <p class="lead">不是把所有資料塞給你，而是在對的時間，只推該看的。</p>
+      <p class="lead">不是把所有資料塞給你，而是在對的時間，只推該看的。四件事都送進 App 與手機推播，LINE 一則都不會收到。</p>
     </div>
     <div class="clock">
       <div class="clock-item">
@@ -166,7 +200,7 @@
       <div class="feature">
         <span class="eyebrow">雷達</span>
         <h3>盤中訊號</h3>
-        <p>支撐壓力的逼近與突破、收復支撐、爆量、漲跌停、目標價。門檻依每檔股票的波動自動調整，同一檔同一輪只推一則。</p>
+        <p>支撐壓力的逼近與突破、收復支撐、爆量、漲跌停、目標價。門檻依每檔股票的波動自動調整，同一檔同一輪只推一則，走手機推播不經 LINE。</p>
       </div>
       <div class="feature">
         <span class="eyebrow">規則</span>
@@ -190,63 +224,6 @@
       </div>
     </div>
     <p style="margin-top:2.2rem"><a href="features.html">看完整功能說明 →</a></p>
-  </div>
-</section>
-
-<section class="section" id="screens">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">App 長這樣</span>
-      <h2>三個畫面，一天就用得到。</h2>
-      <p class="lead">下面是 App 的實際畫面，不是設計稿。用一個只放三檔股票的示範帳號截的，沒有任何使用者的資料。</p>
-    </div>
-    <div class="screens">
-      <figure>
-        <img src="shot-watch.webp" width="1040" height="1240" loading="lazy" decoding="async"
-             alt="自選股畫面：每檔顯示與壓力、支撐的距離、月線與季線位置，台積電那一列另有持股與損益">
-        <figcaption><b>自選股</b>每檔直接寫出壓力與支撐還差多少、月線季線在哪。填了股數與成本的那一檔多一列損益。</figcaption>
-      </figure>
-      <figure>
-        <img src="shot-inbox.webp" width="1040" height="1193" loading="lazy" decoding="async"
-             alt="通知匣畫面：依日期分組的通知列表，橘色為關卡已觸發，藍色為接近關卡或量能變化">
-        <figcaption><b>通知匣</b>推播送出的每一則都留在這裡，依日期分組。橘色是關卡已經觸發，藍色是接近或量能變化。</figcaption>
-      </figure>
-      <figure>
-        <img src="shot-scores.webp" width="1040" height="918" loading="lazy" decoding="async"
-             alt="統計整理畫面：自選股的當日分數、與前期的差、產業別">
-        <figcaption><b>統計整理</b>自選股的當日分數與前期差距。要看 12 個子項與變化原因就點進完整報告。</figcaption>
-      </figure>
-    </div>
-    <p class="dim" style="margin-top:1.4rem;font-size:0.88rem">示範帳號的畫面，數字為擷取當下的資料，不是即時行情。</p>
-  </div>
-</section>
-
-<section class="section" id="example">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">一個交易日的例子</span>
-      <h2>不用盯盤，也知道 09:07 發生了什麼。</h2>
-      <p class="lead">以 2026-09-21 聯發科為例。開盤六分鐘內系統看到六件事，其中兩件推到手機，四件留在雷達裡供回看。下面是 App 當天的實際畫面，用示範帳號截的。</p>
-    </div>
-    <div class="example">
-      <figure>
-        <img src="shot-example-timeline.webp" width="1040" height="1500" loading="lazy" decoding="async"
-             alt="盤中時間軸畫面：2026-09-21 聯發科 09:01 逼近壓力、突破 20 日高，09:07 突破壓力、漲幅超過 5%、突破 52 週高、RSI 高於 70，依發生順序排在圖上與清單裡">
-        <figcaption><b>盤中時間軸</b>一天的訊號依發生順序排開；縱向是價位，虛線是當天用到的關卡。</figcaption>
-      </figure>
-      <figure>
-        <img src="shot-example-home.webp" width="1040" height="1240" loading="lazy" decoding="async"
-             alt="首頁畫面：三檔自選股各有一排近 10 個交易日的格子，格子裡是那天的訊號數；聯發科最右格是今天的 6">
-        <figcaption><b>首頁</b>每檔近 10 個交易日各有幾則，最右一格是今天。點任何一格就回到那一天的時間軸。</figcaption>
-      </figure>
-      <ol class="example-calls">
-        <li><span class="pin">1</span><div><b>09:01 開盤一分鐘</b>價格離壓力 4,870 只差 0.6%，系統先發「逼近壓力」。這一則是預告：接下來幾分鐘值得看一眼。</div></li>
-        <li><span class="pin">2</span><div><b>09:07 站上 4,870</b>「突破壓力」推到手機。你在開會、在通勤，也在同一分鐘知道這件事，而不是收盤後才發現。</div></li>
-        <li><span class="pin">3</span><div><b>同一分鐘還有三件</b>漲幅超過 5%、突破 52 週高、RSI 高於 70 一起成立。這三件不推播、只記在雷達裡：推播只留給你設定的那幾種，其餘的等你有空再看。</div></li>
-        <li><span class="pin pin-alt">4</span><div><b>近 10 天的脈絡</b>首頁每檔右側有一排格子，一格是一個交易日的訊號數。一眼看出哪幾檔最近特別多事，點任何一格回看那一天，不必翻通知匣。</div></li>
-      </ol>
-    </div>
-    <p class="dim" style="margin-top:1.4rem;font-size:0.88rem">以上是系統對資料的描述，不是對股票的判斷，也不是買賣建議。範例來自公開的盤中資料與示範帳號，不含任何使用者的自選股。</p>
   </div>
 </section>
 
@@ -308,6 +285,60 @@
   </div>
 </section>
 
+<section class="section" id="start">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">怎麼開始</span>
+      <h2>三個步驟，大約三分鐘。</h2>
+      <p class="lead">加好友之後，LINE 會立刻傳一則訊息給你，裡面有「開始使用」的連結和 8 碼登入碼。<b>LINE 的任務到這裡就結束了</b>——剩下的照你的手機做一次，之後訊號都走推播。</p>
+    </div>
+
+    <div class="os-tabs">
+      <input type="radio" name="os" id="os-android" checked>
+      <label for="os-android">Android</label>
+      <input type="radio" name="os" id="os-iphone">
+      <label for="os-iphone">iPhone</label>
+      <input type="radio" name="os" id="os-pc">
+      <label for="os-pc">電腦</label>
+
+      <div class="os-panel" data-os="android">
+        <ol class="steps">
+          <li><b>加 LINE 好友</b><span>點上面的按鈕，或在 LINE 搜尋 @408csebn。加好友的當下帳號就建立完成，訊息會立刻送到。</span></li>
+          <li><b>點「開始使用」，把 App 裝到桌面</b><span>連結會用 Chrome 開啟，照畫面提示選「安裝」或「加入主畫面」。</span></li>
+          <li><b>從桌面開啟，允許通知</b><span>Chrome 與 App 共用登入，通常不必再輸入登入碼。允許通知之後，訊號就會送進手機的通知中心。</span></li>
+        </ol>
+      </div>
+
+      <div class="os-panel" data-os="iphone">
+        <ol class="steps">
+          <li><b>加 LINE 好友</b><span>點上面的按鈕，或在 LINE 搜尋 @408csebn。加好友的當下帳號就建立完成，訊息會立刻送到。</span></li>
+          <li><b>用 Safari 開連結，先「加入主畫面」</b><span>點下方分享鈕 → 加入主畫面。iPhone 一定要先安裝才收得到推播，需要 iOS 16.4 以上。</span></li>
+          <li><b>從主畫面開啟，貼上 8 碼登入碼</b><span>回 LINE 點「複製登入碼」，在 App 按貼上圖示。Safari 與主畫面 App 的儲存空間不共用，所以這一步不能省。</span></li>
+        </ol>
+      </div>
+
+      <div class="os-panel" data-os="pc">
+        <ol class="steps">
+          <li><b>加 LINE 好友</b><span>用手機掃右邊的 QR，或在 LINE 電腦版搜尋 @408csebn。</span></li>
+          <li><b>點訊息裡的「開始使用」</b><span>瀏覽器會直接登入，不需要輸入任何東西。</span></li>
+          <li><b>推播請在手機上安裝</b><span>電腦版可以看分數、統計與 K 線。盤中訊號要推到身上，還是得在手機加入主畫面。</span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="start-foot">
+      <div class="qr-box">
+        <img src="line-qr.svg" width="132" height="132" alt="加 CapitalGuard LINE 官方帳號好友的 QR code" loading="lazy">
+        <div>
+          <b>用手機掃這個 QR</b>
+          <p class="muted">官方帳號 <span class="mono">@408csebn</span>（CapitalGuard-股票追蹤）。加好友後在聊天室傳「登入」，隨時可以重拿一組新的登入碼。</p>
+        </div>
+      </div>
+      <a class="btn btn-primary btn-lg" href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-steps">加 LINE 好友，30 秒開始</a>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="faq">
   <div class="wrap">
     <div class="section-head">
@@ -315,6 +346,10 @@
       <h2>開始之前</h2>
     </div>
     <div class="faq">
+      <details>
+        <summary>加了 LINE 好友，會一直收到 LINE 訊息嗎？</summary>
+        <div class="a">不會。官方帳號只傳登入與帳號相關的訊息——加好友當下那一則，以及你自己在聊天室要求「登入」時的新登入碼。股票的分數、盤中訊號、盤後事件一則都不會傳進 LINE，全部走手機的推播通知。</div>
+      </details>
       <details>
         <summary>需要下載 App 嗎？</summary>
         <div class="a">不用。CapitalGuard 是網頁應用程式（PWA），用瀏覽器開啟後「加入主畫面」就能像 App 一樣使用。iPhone 需 iOS 16.4 以上並加入主畫面，才能收到推播。</div>
@@ -324,12 +359,12 @@
         <div class="a">加 LINE 官方帳號好友就會自動建立帳號，LINE 會立刻把登入連結與 8 碼登入碼傳給你，不需要設定密碼。我們只取得你的 LINE 顯示名稱與識別碼，不會讀取你的聊天內容。之後在聊天室傳「登入」或「換手機」，隨時可以重拿一組新的碼。</div>
       </details>
       <details>
-        <summary>為什麼一定要加 LINE 好友？</summary>
-        <div class="a">帳號與登入碼都由 LINE 官方帳號發送，這是唯一的註冊入口。好處是不必設密碼、換手機時在聊天室傳「登入」就能重拿一組碼。加好友之後我們只會傳登入與帳號相關的訊息，盤中與盤後的提醒走手機的推播通知，不會洗你的聊天室。</div>
-      </details>
-      <details>
         <summary>通知怎麼送到手機？</summary>
         <div class="a">透過瀏覽器的 Web Push 直接推到手機通知中心，不經 LINE 訊息，不另外收費。通知分兩級：橘色代表關卡已經觸發（漲跌停、跌破支撐、觸及目標價），藍色代表接近關卡或量能變化。</div>
+      </details>
+      <details>
+        <summary>為什麼一定要加 LINE 好友？</summary>
+        <div class="a">因為帳號與登入碼都由 LINE 官方帳號發送，這是唯一的註冊入口。好處是不必設密碼、不必填 Email，換手機時在聊天室傳「登入」就能重拿一組碼。LINE 只負責認證這一件事，收訊還是走手機推播。</div>
       </details>
       <details>
         <summary>免費版能用多久？</summary>
@@ -344,7 +379,7 @@
         <div class="a">不是。CapitalGuard 是公開市場資料的整理與統計工具，所有分數、訊號、事件、篩選結果與 AI 說明都是資料計算的呈現，不對任何股票做買賣、持有或進出場的推介。本服務並非證券投資顧問事業，投資決策請自行判斷。</div>
       </details>
     </div>
-    <p style="margin-top:2rem"><a href="faq.html">看完整常見問題（24 題）→</a></p>
+    <p style="margin-top:2rem"><a href="faq.html">看完整常見問題（25 題）→</a></p>
   </div>
 </section>
 
@@ -353,9 +388,9 @@
     <div class="cta-band">
       <div>
         <h2>把盯盤這件事交給推播。</h2>
-        <p>加 LINE 好友就開始，3 檔自選股免費，沒有期限。</p>
+        <p>加 LINE 好友就開始，3 檔自選股免費，沒有期限。LINE 只用來登入，通知走手機推播。</p>
       </div>
-      <a class="btn btn-primary btn-lg" href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-foot">加 LINE 好友，免費開始</a>
+      <a class="btn btn-primary btn-lg" href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-foot">加 LINE 好友，30 秒開始</a>
     </div>
     <div class="notice" style="margin-top:2rem">
       <b>使用前請先確認</b>　CapitalGuard 是公開市場資料的整理與統計工具。所有分數、訊號、事件、篩選結果與 AI 說明，都是資料計算的呈現，<b>不是投資建議</b>，也不對任何股票做買賣、持有或進出場的推介。本服務並非證券投資顧問事業，不提供個別化投資諮詢。資料可能延遲、缺漏或有誤，推播不保證即時送達。投資決策請自行判斷並承擔全部風險。

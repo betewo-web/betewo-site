@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
-<link rel="stylesheet" href="site.css?v=5">
+<link rel="stylesheet" href="site.css?v=6">
 </head>
 <body>
 <header class="site-head">
@@ -39,9 +39,9 @@
 <section class="hero">
   <div class="wrap">
     <div class="hero-copy">
-      <span class="eyebrow">台股 上市／上櫃 全市場每日分數 · 盤中即時訊號</span>
+      <span class="eyebrow">台股 上市／上櫃 全市場每日分數 · 盤中訊號</span>
       <h1>每天 06:15，上市櫃一千一百多檔重新統計一次。</h1>
-      <p class="lead">盤中每 5 秒更新自選股的報價與關卡狀態。跌破支撐、帶量上漲、漲跌停，訊號 15 秒內推到手機，不用整天開著看盤軟體。</p>
+      <p class="lead">盤中持續盯著自選股與支撐壓力的相對位置。跌破支撐、帶量上漲、漲跌停，條件成立就推到手機，不用整天開著看盤軟體。</p>
       <div class="hero-cta">
         <a class="btn btn-primary btn-lg" href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-hero">加 LINE 好友，免費開始</a>
         <a class="btn btn-ghost btn-lg" href="#start">怎麼開始？</a>
@@ -135,7 +135,7 @@
       <div class="clock-item">
         <div class="clock-time">09:00–13:30</div>
         <h3>盤中雷達</h3>
-        <p>每 5 秒更新自選股報價與關卡狀態。支撐壓力、爆量、漲跌停、目標價，15 秒內到手機。</p>
+        <p>盤中持續判斷自選股是否觸及支撐壓力、爆量、漲跌停、目標價，成立就推到手機。</p>
       </div>
       <div class="clock-item">
         <div class="clock-time">16:30</div>
@@ -165,7 +165,7 @@
       </div>
       <div class="feature">
         <span class="eyebrow">雷達</span>
-        <h3>盤中即時訊號</h3>
+        <h3>盤中訊號</h3>
         <p>支撐壓力的逼近與突破、收復支撐、爆量、漲跌停、目標價。門檻依每檔股票的波動自動調整，同一檔同一輪只推一則。</p>
       </div>
       <div class="feature">
@@ -176,7 +176,7 @@
       <div class="feature">
         <span class="eyebrow">持股</span>
         <h3>持股損益與 K 線</h3>
-        <p>在自選股列記錄股數與成本，盤中即時市值與未實現損益；K 線視窗標出支撐壓力關卡與今天發過的訊號。</p>
+        <p>在自選股列記錄股數與成本，App 會算出市值與未實現損益；K 線視窗標出支撐壓力關卡與今天發過的訊號。</p>
       </div>
       <div class="feature">
         <span class="eyebrow">盤後</span>
@@ -203,7 +203,7 @@
     <div class="screens">
       <figure>
         <img src="shot-watch.webp" width="1040" height="1240" loading="lazy" decoding="async"
-             alt="自選股畫面：每檔顯示現價、壓力與支撐的距離、月線與季線位置，台積電那一列另有持股與損益">
+             alt="自選股畫面：每檔顯示與壓力、支撐的距離、月線與季線位置，台積電那一列另有持股與損益">
         <figcaption><b>自選股</b>每檔直接寫出壓力與支撐還差多少、月線季線在哪。填了股數與成本的那一檔多一列損益。</figcaption>
       </figure>
       <figure>
@@ -213,11 +213,11 @@
       </figure>
       <figure>
         <img src="shot-scores.webp" width="1040" height="918" loading="lazy" decoding="async"
-             alt="統計整理畫面：自選股的當日分數、與前期的差、產業別與即時報價">
+             alt="統計整理畫面：自選股的當日分數、與前期的差、產業別">
         <figcaption><b>統計整理</b>自選股的當日分數與前期差距。要看 12 個子項與變化原因就點進完整報告。</figcaption>
       </figure>
     </div>
-    <p class="dim" style="margin-top:1.4rem;font-size:0.88rem">示範帳號的畫面，報價與分數為擷取當下的資料，不是即時報價。</p>
+    <p class="dim" style="margin-top:1.4rem;font-size:0.88rem">示範帳號的畫面，數字為擷取當下的資料，不是即時行情。</p>
   </div>
 </section>
 
@@ -240,7 +240,7 @@
         <figcaption><b>首頁</b>每檔近 10 個交易日各有幾則，最右一格是今天。點任何一格就回到那一天的時間軸。</figcaption>
       </figure>
       <ol class="example-calls">
-        <li><span class="pin">1</span><div><b>09:01 開盤一分鐘</b>現價 4,840 離壓力 4,870 只差 0.6%，系統先發「逼近壓力」。這一則是預告：接下來幾分鐘值得看一眼。</div></li>
+        <li><span class="pin">1</span><div><b>09:01 開盤一分鐘</b>價格離壓力 4,870 只差 0.6%，系統先發「逼近壓力」。這一則是預告：接下來幾分鐘值得看一眼。</div></li>
         <li><span class="pin">2</span><div><b>09:07 站上 4,870</b>「突破壓力」推到手機。你在開會、在通勤，也在同一分鐘知道這件事，而不是收盤後才發現。</div></li>
         <li><span class="pin">3</span><div><b>同一分鐘還有三件</b>漲幅超過 5%、突破 52 週高、RSI 高於 70 一起成立。這三件不推播、只記在雷達裡：推播只留給你設定的那幾種，其餘的等你有空再看。</div></li>
         <li><span class="pin pin-alt">4</span><div><b>近 10 天的脈絡</b>首頁每檔右側有一排格子，一格是一個交易日的訊號數。一眼看出哪幾檔最近特別多事，點任何一格回看那一天，不必翻通知匣。</div></li>
@@ -262,7 +262,7 @@
       <li><b>2,150</b><span>檔可搜尋與設定通知</span><i>全部上市櫃，含不計分的冷門股</i></li>
       <li><b>12</b><span>個評分子項</span><i>基本面 5 項＋技術量能 7 項，各有前期對照</i></li>
       <li><b>21</b><span>種自訂規則條件</span><i>價量、技術指標、法人籌碼、財報，可組合</i></li>
-      <li><b>5 秒</b><span>盤中更新一輪</span><i>自選股報價與支撐壓力關卡狀態</i></li>
+      <li><b>09:00–13:30</b><span>盤中全程判斷</span><i>自選股的關卡、量能與漲跌停，在主機端持續評估</i></li>
       <li><b>15 秒</b><span>訊號送達手機</span><i>從判定成立到推播離開伺服器</i></li>
     </ul>
     <p class="dim" style="margin-top:1.4rem;font-size:0.88rem">資料來自證券交易所、櫃買中心與公開資訊觀測站等公開來源，可能延遲、缺漏或有誤。</p>

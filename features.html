@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>功能 · CapitalGuard 台股監控</title>
-<meta name="description" content="每日投資評分與變化原因、盤中即時訊號、21 種自訂通知規則、持股損益與 K 線、盤後事件彙整、AI 資料白話（開發中）。">
+<meta name="description" content="每日投資評分與變化原因、盤中訊號、21 種自訂通知規則、持股損益與 K 線、盤後事件彙整、AI 資料白話（開發中）。">
 <link rel="canonical" href="https://betewo-web.github.io/betewo-site/features.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="CapitalGuard 台股監控">
 <meta property="og:title" content="功能 · CapitalGuard 台股監控">
-<meta property="og:description" content="每日投資評分與變化原因、盤中即時訊號、21 種自訂通知規則、持股損益與 K 線、盤後事件彙整、AI 資料白話（開發中）。">
+<meta property="og:description" content="每日投資評分與變化原因、盤中訊號、21 種自訂通知規則、持股損益與 K 線、盤後事件彙整、AI 資料白話（開發中）。">
 <meta property="og:url" content="https://betewo-web.github.io/betewo-site/features.html">
 <meta property="og:image" content="https://betewo-web.github.io/betewo-site/og-cover.png">
 <meta property="og:image:width" content="1200">
@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
-<link rel="stylesheet" href="site.css?v=5">
+<link rel="stylesheet" href="site.css?v=6">
 </head>
 <body>
 <header class="site-head">
@@ -115,8 +115,8 @@
   <section class="feature-detail" id="radar">
     <div>
       <span class="eyebrow">09:00–13:30</span>
-      <h2>盤中即時訊號</h2>
-      <p class="lead">每 5 秒更新自選股的報價與關卡狀態，訊號 15 秒內到手機。門檻依每檔股票自己的波動（ATR）調整，大型股與小型股用的不是同一把尺。</p>
+      <h2>盤中訊號</h2>
+      <p class="lead">盤中持續判斷自選股與支撐壓力的相對位置，條件成立就推到手機。門檻依每檔股票自己的波動（ATR）調整，大型股與小型股用的不是同一把尺。</p>
       <ul>
         <li>支撐與壓力關卡每天開盤前算好、當日凍結，不會盤中飄移。</li>
         <li>突破與跌破需連續兩輪確認並站穩一定幅度，避免假突破一直響。</li>
@@ -154,7 +154,7 @@
       <h2>自訂通知規則</h2>
       <p class="lead">內建訊號不夠用的時候，自己組。21 種條件、四個層級，可以多條件組合成一則規則，在 App 裡直接編輯，不用寫程式。</p>
       <ul>
-        <li>盤中條件每 5 秒評估；技術與籌碼條件每日收盤後評估；基本面條件在財報或營收更新時評估。</li>
+        <li>盤中條件在盤中持續評估；技術與籌碼條件每日收盤後評估；基本面條件在財報或營收更新時評估。</li>
         <li>同一則規則同一天不重複觸發；基本面規則以資料變動為準，新財報出來才會再通知。</li>
         <li>免費版 3 條，基本版 10 條。</li>
       </ul>
@@ -184,7 +184,7 @@
     <div>
       <span class="eyebrow">持股</span>
       <h2>持股損益與 K 線</h2>
-      <p class="lead">在自選股列輸入股數與成本，盤中即時市值與未實現損益就在旁邊，不用切換 App 對帳。</p>
+      <p class="lead">在自選股列輸入股數與成本，市值與未實現損益就在旁邊，不用切換 App 對帳。</p>
       <ul>
         <li>持股與自選股共用同一份通知設定，持有的股票自動享有全部監控。</li>
         <li>K 線視窗標出支撐壓力關卡，頂端列出今天的盤中狀態與已發過的訊號。</li>

@@ -276,7 +276,25 @@ p + p { margin-top: 1em; }
 .plan li.no::before { content: "–"; color: var(--dim); }
 .plan li.no { color: var(--dim); }
 .plan .btn { margin-top: auto; justify-content: center; }
-@media (max-width: 860px) { .plans { grid-template-columns: 1fr; max-width: 460px; margin-inline: auto; } .plan.lift { order: -1; } }
+/* 手機：一欄。`.plans.plans-two` 的權重是 (0,2,0)，這裡只寫 `.plans`（0,1,0）蓋不掉——
+   媒體查詢不會增加權重，2026-09-23 之前兩張卡在 390px 仍並排、第二張被切出畫面右邊。 */
+@media (max-width: 860px) {
+  /* minmax(0, 1fr) 不能寫成 1fr：1fr 等於 minmax(auto, 1fr)，auto 的最小值是內容的
+     min-content 寬，卡片因此會比視窗寬、右邊連同按鈕被切掉。原本的 .plans-two 用
+     minmax(0, 340px) 正是為了這件事。 */
+  .plans,
+  .plans.plans-two { grid-template-columns: minmax(0, 1fr); max-width: 460px; margin-inline: auto; }
+  .plan.lift { order: -1; }
+}
+
+/* 手機再收一階：兩張卡疊起來很長，捲很久才看得完。只收間距與價格字級，不動內容。 */
+@media (max-width: 560px) {
+  .plans { gap: 0.9rem; }
+  .plan { padding: 1.15rem 1.2rem; gap: 0.7rem; }
+  .price { font-size: 2rem; }
+  .plan ul { gap: 0.32rem; }
+  .plan-pitch { margin-bottom: 0.5rem; }
+}
 
 /* 比較表 */
 .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }

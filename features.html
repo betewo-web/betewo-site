@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>功能 · CapitalGuard 台股監控</title>
-<meta name="description" content="每日投資評分與變化原因、盤中訊號、21 種自訂通知規則、持股損益與 K 線、盤後事件彙整、AI 資料白話（開發中）。">
+<title>功能 · CapitalGuard 股市雷達</title>
+<meta name="description" content="每日投資評分與變化原因、盤中訊號、20 種自訂通知規則、持股損益與 K 線、盤後事件彙整、AI 資料白話（開發中）。">
 <link rel="canonical" href="https://betewo-web.github.io/betewo-site/features.html">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="CapitalGuard 台股監控">
-<meta property="og:title" content="功能 · CapitalGuard 台股監控">
-<meta property="og:description" content="每日投資評分與變化原因、盤中訊號、21 種自訂通知規則、持股損益與 K 線、盤後事件彙整、AI 資料白話（開發中）。">
+<meta property="og:site_name" content="CapitalGuard 股市雷達">
+<meta property="og:title" content="功能 · CapitalGuard 股市雷達">
+<meta property="og:description" content="每日投資評分與變化原因、盤中訊號、20 種自訂通知規則、持股損益與 K 線、盤後事件彙整、AI 資料白話（開發中）。">
 <meta property="og:url" content="https://betewo-web.github.io/betewo-site/features.html">
 <meta property="og:image" content="https://betewo-web.github.io/betewo-site/og-cover.png">
 <meta property="og:image:width" content="1200">
@@ -26,7 +26,7 @@
 <body>
 <header class="site-head">
   <div class="wrap">
-    <a class="brand" href="index.html" aria-label="CapitalGuard 首頁"><svg class="brand-mark" viewBox="0 0 512 512" aria-hidden="true"><rect width="512" height="512" rx="96" fill="#14122a"/><g fill="none" stroke-linecap="round"><circle cx="256" cy="256" r="139" stroke="#8b7cff" stroke-width="25"/><circle cx="256" cy="256" r="84" stroke="#c4b5fd" stroke-width="22"/><path stroke="#f5c542" stroke-width="13" d="M256 70V49M442 256h21M256 442v21M70 256H49"/><path stroke="#f5c542" stroke-width="20" d="M227 256h58M256 227v58"/></g></svg><span class="brand-name">CapitalGuard</span><span class="brand-sub">台股監控</span></a>
+    <a class="brand" href="index.html" aria-label="CapitalGuard 首頁"><svg class="brand-mark" viewBox="0 0 512 512" aria-hidden="true"><rect width="512" height="512" rx="96" fill="#14122a"/><g fill="none" stroke-linecap="round"><circle cx="256" cy="256" r="139" stroke="#8b7cff" stroke-width="25"/><circle cx="256" cy="256" r="84" stroke="#c4b5fd" stroke-width="22"/><path stroke="#f5c542" stroke-width="13" d="M256 70V49M442 256h21M256 442v21M70 256H49"/><path stroke="#f5c542" stroke-width="20" d="M227 256h58M256 227v58"/></g></svg><span class="brand-name">CapitalGuard</span><span class="brand-sub">股市雷達</span></a>
     <nav class="site-nav" id="site-nav" aria-label="主選單">
       <a href="features.html" aria-current="page">功能</a> <a href="pricing.html">方案與價格</a> <a href="faq.html">常見問題</a> <a href="contact.html">聯絡</a>
       <a class="nav-app" href="https://betewo-web.github.io/CapitalGuard-pages/watchlist.html" data-cg="open-app">開啟 App</a>
@@ -152,7 +152,7 @@
     <div>
       <span class="eyebrow">自訂</span>
       <h2>自訂通知規則</h2>
-      <p class="lead">內建訊號不夠用的時候，自己組。21 種條件、四個層級，可以多條件組合成一則規則，在 App 裡直接編輯，不用寫程式。</p>
+      <p class="lead">內建訊號不夠用的時候，自己組。20 種條件、四個層級，可以多條件組合成一則規則，在 App 裡直接編輯，不用寫程式。</p>
       <ul>
         <li>盤中條件在盤中持續評估；技術與籌碼條件每日收盤後評估；基本面條件在財報或營收更新時評估。</li>
         <li>同一則規則同一天不重複觸發；基本面規則以資料變動為準，新財報出來才會再通知。</li>
@@ -184,10 +184,11 @@
     <div>
       <span class="eyebrow">持股</span>
       <h2>持股損益與 K 線</h2>
-      <p class="lead">在自選股列輸入股數與成本，市值與未實現損益就在旁邊，不用切換 App 對帳。</p>
+      <p class="lead">收盤後那一頁列出每檔的收盤價、今天的事件，以及填過股數與成本的那幾檔的未實現損益，不用切換 App 對帳。</p>
       <ul>
+        <li>股數與成本在「盤後」那一頁的每張卡片上填；兩欄留空就是純觀察，不計算損益。</li>
         <li>持股與自選股共用同一份通知設定，持有的股票自動享有全部監控。</li>
-        <li>K 線視窗標出支撐壓力關卡，頂端列出今天的盤中狀態與已發過的訊號。</li>
+        <li>K 線在「盤後」那一頁開，圖上標出最近的支撐與壓力，長按看那一根的開高低收與量。</li>
         <li>元富證券帳戶可申請庫存同步：股數自動更新，成本仍由你輸入。</li>
         <li>漲跌幅沿用台股習慣：紅漲綠跌，且只有漲跌幅用紅綠。</li>
       </ul>

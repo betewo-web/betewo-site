@@ -156,50 +156,16 @@ p + p { margin-top: 1em; }
     repeating-linear-gradient(90deg, rgba(146, 160, 190, 0.045) 0 1px, transparent 1px 56px),
     var(--bg);
 }
-.hero .wrap { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+/* 2026-09-28 起 Hero 是純文字：不放截圖也不放示意卡，寬度收在可讀行長內 */
+.hero .wrap { display: block; }
+.hero-copy { max-width: 42em; }
 .hero-copy h1 { margin-bottom: 1.2rem; }
 .hero-copy .lead { font-size: 1.15rem; }
 /* 讓對的人三秒內認出自己——沒有這一句，訪客得自己猜這是不是在講他 */
 .hero-who { margin-top: 1.2rem; font-size: 0.95rem; color: var(--muted); border-left: 2px solid var(--accent); padding-left: 0.85rem; list-style: none; display: grid; gap: 0.6rem; }
 .hero-who b { color: var(--text); font-weight: 500; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; margin-top: 2rem; }
-.hero-note { margin-top: 1rem; font-size: 0.88rem; color: var(--dim); }
-.hero-note b { color: var(--muted); font-weight: 500; }
-@media (max-width: 900px) {
-  .hero .wrap { grid-template-columns: 1fr; }
-  .hero-visual { justify-self: center; width: 100%; max-width: 420px; }
-}
-
-/* ── Hero 的真實截圖 + 推播示意 ──
-   說服的順序：最需要證據的位置放實際畫面，不放示意圖。
-   浮在截圖上的那張卡片是唯一的示意物，用來講「訊號走手機推播，不是 LINE 訊息」。 */
-.hero-shot { position: relative; margin: 0; }
-.hero-shot img {
-  width: 100%; height: auto; display: block;
-  border-radius: 20px; border: 1px solid var(--border-strong); box-shadow: var(--shadow-lift);
-}
-.hero-shot figcaption { margin-top: 0.75rem; text-align: center; font-size: 0.75rem; color: var(--dim); }
-.push-card {
-  /* 靠右浮：卡片蓋掉的是截圖右上角的「看 K 線／關閉」，
-     左邊的「聯發科 2026-09-21」要留著——那是這張圖唯一的證據標示。 */
-  position: absolute; z-index: 2; left: 24%; right: -6%; top: -26px;
-  background: var(--surface-2); border: 1px solid var(--border-strong); border-radius: 16px;
-  padding: 0.7rem 0.85rem 0.75rem; box-shadow: var(--shadow-lift);
-  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-}
-.push-head { display: flex; align-items: center; gap: 0.45rem; font-size: 0.72rem; color: var(--dim); }
-.push-icon { width: 16px; height: 16px; border-radius: 5px; flex: none; }
-.push-app { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.push-time { margin-left: auto; font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
-.push-title { margin-top: 0.35rem; font-weight: 700; font-size: 0.98rem; }
-.push-sub { margin-top: 0.2rem; font-size: 0.72rem; color: var(--muted); }
-/* 2026-09-28 起 Hero 不放截圖，只留推播示意卡：卡片改成靜態排版 */
-.hero-shot-cardonly { max-width: 380px; margin: 0 auto; }
-.hero-shot-cardonly .push-card { position: static; }
-.hero-shot-cardonly figcaption { margin-top: 0.75rem; }
-@media (max-width: 900px) { .push-card { left: 14%; right: -2%; top: -20px; } .hero-shot-cardonly .push-card { position: static; } }
-@media (max-width: 480px) { .push-card { left: 8%; right: 0; } .push-title { font-size: 0.92rem; } }
-
+.section-more { margin-top: 2.2rem; color: var(--muted); }
 /* ── 一天的節奏（時間軸）── */
 .clock { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; position: relative; }
 .clock::before { content: ""; position: absolute; left: 0; right: 0; top: 7px; height: 1px; background: var(--border-strong); }

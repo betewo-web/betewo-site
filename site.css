@@ -76,6 +76,14 @@ p + p { margin-top: 1em; }
 .section-head { max-width: 40em; margin-bottom: 2.5rem; }
 .section-head .lead { margin-top: 0.8rem; }
 
+/* ── 停一下：首頁例子與「通知怎麼來」之間的標語，留白要夠讓人停下來 ── */
+.pause { padding: clamp(5.5rem, 13vw, 10rem) 0; text-align: center; }
+.pause .wrap { max-width: 34em; }
+.pause p { font-family: var(--font-display); font-weight: 500; font-size: clamp(1.25rem, 2.6vw, 1.75rem); line-height: 1.75; color: var(--text); margin: 0; }
+.pause p + p { margin-top: clamp(1.8rem, 4.5vw, 3rem); }
+.pause p.pause-brand { margin-top: clamp(3.6rem, 9vw, 6rem); color: var(--accent); font-weight: 700; }
+.pause p.pause-brand ~ p { color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.35rem); }
+
 /* ── 按鈕 ── */
 .btn {
   display: inline-flex; align-items: center; gap: 0.5rem;

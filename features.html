@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
-<link rel="stylesheet" href="site.css?v=8">
+<link rel="stylesheet" href="site.css?v=9">
 </head>
 <body>
 <header class="site-head">
@@ -99,6 +99,7 @@
         <li>分數經平滑處理，單日的資料雜訊不會讓分數跳動。</li>
         <li>納入評分的是日均成交金額 500 萬以上的個股，2026-09-15 當日為 1,166 檔；成交太稀薄的不計分，因為那種價格撐不起統計。全部兩千一百多檔上市櫃股票仍可搜尋、看 K 線與設定通知規則。</li>
         <li>統計頁的排序欄位、產業、最低分數與筆數都由你設定，介面只依你的條件排序與過濾，不是推薦名單。</li>
+        <li>每日評分與統計整理分頁是目標偵測雷達以上的功能；標準雷達（免費版）以盤中訊號與通知為主。</li>
       </ul>
     </div>
     <div class="scorecard" aria-label="分數明細示意">
@@ -152,11 +153,12 @@
     <div>
       <span class="eyebrow">自訂</span>
       <h2>自訂通知規則</h2>
-      <p class="lead">內建訊號不夠用的時候，自己組。22 種條件、四個層級，可以多條件組合成一則規則，在 App 裡直接編輯，不用寫程式。</p>
+      <p class="lead">這就是 App 裡的「進階訊號」：內建的基礎訊號不夠用的時候，自己組。22 種條件、四個層級，在 App 裡直接編輯，不用寫程式；廣域追蹤雷達還能把多個條件混和成一則（混和訊號）。</p>
       <ul>
         <li>盤中條件在盤中持續評估；技術與籌碼條件每日收盤後評估；基本面條件在財報或營收更新時評估。</li>
         <li>同一則規則同一天不重複觸發；基本面規則以資料變動為準，新財報出來才會再通知。</li>
-        <li>免費版 1 條、專業版 6 條、旗艦版 10 條；旗艦版還能把多個條件混和成一條。</li>
+        <li>標準雷達（免費版）1 條、目標偵測雷達 6 條、廣域追蹤雷達 10 條；廣域追蹤雷達還能把多個條件混和成一條。</li>
+        <li>混和訊號的例子：「向上跳空 2%＋量能達均量 2 倍」開盤只在兩者同時成立時通知一次；「外資連續 3 日買超＋站上 20 日均線」則在盤後資料更新後評估。</li>
       </ul>
     </div>
     <div>
@@ -164,6 +166,7 @@
         <li><span class="em mono" style="font-size:0.7rem;color:var(--accent)">盤中</span>突破前高／跌破前低</li>
         <li><span class="em mono" style="font-size:0.7rem;color:var(--accent)">盤中</span>創 52 週新高／新低</li>
         <li><span class="em mono" style="font-size:0.7rem;color:var(--accent)">盤中</span>漲幅／跌幅超過 N%</li>
+        <li><span class="em mono" style="font-size:0.7rem;color:var(--accent)">盤中</span>開盤向上／向下跳空 N%</li>
         <li><span class="em mono" style="font-size:0.7rem;color:var(--accent)">盤中</span>量能達均量 N 倍</li>
         <li><span class="em mono" style="font-size:0.7rem;color:var(--accent-2)">技術</span>均線黃金／死亡交叉</li>
         <li><span class="em mono" style="font-size:0.7rem;color:var(--accent-2)">技術</span>股價站上／跌破均線</li>
@@ -176,6 +179,7 @@
         <li><span class="em mono" style="font-size:0.7rem;color:var(--muted)">基本面</span>EPS 年增</li>
         <li><span class="em mono" style="font-size:0.7rem;color:var(--muted)">基本面</span>毛利率／營益率／淨利率</li>
         <li><span class="em mono" style="font-size:0.7rem;color:var(--muted)">基本面</span>ROE 高於</li>
+        <li><span class="em mono" style="font-size:0.7rem;color:var(--accent)">混和</span>跳空 2%＋量能 2 倍（廣域追蹤雷達）</li>
       </ul>
     </div>
   </section>
@@ -205,9 +209,9 @@
 
   <section class="feature-detail" id="ai">
     <div>
-      <span class="eyebrow">開發中 · 上線後為旗艦版功能</span>
+      <span class="eyebrow">開發中 · 目前不包含在任何方案裡</span>
       <h2>AI 資料白話</h2>
-      <p class="lead">把分數變化、盤中訊號與盤後事件翻成白話說明，也可以對自選股提問。功能開發中，上線後為旗艦版限定；旗艦版在 AI 上線前不開放訂閱。</p>
+      <p class="lead">把分數變化、盤中訊號與盤後事件翻成白話說明，也可以對自選股提問。功能開發中，目前不包含在任何方案裡；完成後會先公告。</p>
       <ul>
         <li>只翻譯資料：不做多空判斷、不預測走勢、不給買賣建議、不提目標價。</li>
         <li>問「該不該買」「會不會漲」這類問題，系統直接回覆固定說明，不送交模型。</li>
@@ -223,7 +227,7 @@
   <section class="section" style="padding-top:1rem">
     <div class="cta-band">
       <div>
-        <h2>免費方案就能用完整的每日評分。</h2>
+        <h2>免費方案就能體驗盤中訊號和通知。</h2>
         <p>加 LINE 好友，3 檔自選股免費，沒有期限。LINE 只用來登入，通知走手機推播。</p>
       </div>
       <a class="btn btn-primary btn-lg" href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-foot">加 LINE 好友，30 秒開始</a>

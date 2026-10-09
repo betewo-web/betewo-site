@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>功能 · CapitalGuard 股市雷達</title>
-<meta name="description" content="每日統計評分（非投資建議）與變化原因、盤中訊號、22 種自訂通知規則、持股損益與 K 線、盤後事件彙整、AI 資料白話（開發中）。">
+<meta name="description" content="每日統計評分（非投資建議）與變化原因、盤中訊號、22 種自訂通知規則、持股損益與 K 線、盤後事件彙整、好友分享、AI 資料白話（開發中）。">
 <link rel="canonical" href="https://betewo-web.github.io/betewo-site/features.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="CapitalGuard 股市雷達">
 <meta property="og:title" content="功能 · CapitalGuard 股市雷達">
-<meta property="og:description" content="每日統計評分（非投資建議）與變化原因、盤中訊號、22 種自訂通知規則、持股損益與 K 線、盤後事件彙整、AI 資料白話（開發中）。">
+<meta property="og:description" content="每日統計評分（非投資建議）與變化原因、盤中訊號、22 種自訂通知規則、持股損益與 K 線、盤後事件彙整、好友分享、AI 資料白話（開發中）。">
 <meta property="og:url" content="https://betewo-web.github.io/betewo-site/features.html">
 <meta property="og:image" content="https://betewo-web.github.io/betewo-site/og-cover.png?v=2">
 <meta property="og:image:width" content="1200">
@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
-<link rel="stylesheet" href="site.css?v=11">
+<link rel="stylesheet" href="site.css?v=12">
 </head>
 <body>
 <header class="site-head">
@@ -39,7 +39,7 @@
 <div class="wrap doc-head">
   <span class="eyebrow">功能</span>
   <h1>盤後看分數，盤中收訊號。</h1>
-  <p class="lead" style="margin-top:1rem">六個功能，全部圍繞同一件事：把公開資料整理好、在對的時間推到手機。判斷留給你。LINE 只用來建立帳號與登入，訊號一律走手機的推播通知。</p>
+  <p class="lead" style="margin-top:1rem">七個功能，全部圍繞同一件事：把公開資料整理好、在對的時間推到手機。判斷留給你。LINE 只用來建立帳號與登入，訊號一律走手機的推播通知。</p>
 </div>
 
 <section class="section" id="what" style="padding-top:2.5rem">
@@ -205,6 +205,47 @@
         <li>每則事件附 0–100 的顯著度：這筆資料有多不尋常，不是多空判斷。</li>
         <li>標題只描述資料，不寫結論。同一天同一檔不重複。</li>
       </ul>
+    </div>
+  </section>
+
+  <section class="feature-detail" id="share">
+    <div>
+      <span class="eyebrow">分享</span>
+      <h2>好友分享</h2>
+      <p class="lead">把一檔自選股的訊號設定分享給 App 裡的好友。對方接受之後，這一檔每一則通知你們同時收到；他那一則的最後一行寫「來自 ○○ 的分享」，其餘和你收到的一模一樣。</p>
+      <ul>
+        <li>送出的是這檔目前的設定：基礎訊號的開關、你設定的上漲與下跌價位、套用在這檔的進階訊號。持有股數與成本不會送出。</li>
+        <li>對象可以勾一位或好幾位好友，也可以把常用名單帶進來；可以設終止日，也可以永不終止。之後要增減對象或結束分享，都在「我分享出去的」那一則上做，結束時對方會收到通知。</li>
+        <li>你改了這檔的任何設定，好友那邊自動跟著換，不必重送，對方也不必按任何東西。</li>
+        <li>對方隨時可以移除，或對這一檔選「不再接收」。好友分享給他的股票算在他的自選股上限內（自選股＋好友分享），你分享出去的不佔你的額度；分享裡的進階訊號依收件人自己的方案生效。</li>
+        <li>好友是在 App 的「分享」分頁互相加的：顯示條碼讓對方掃、掃對方的條碼，或輸入 12 碼 ID 搜尋，對方同意才成為好友。與 LINE 的好友名單無關，我們不讀取你的 LINE 聯絡人。</li>
+        <li>三個方案都能用，免費版也可以。分享的是通知設定，不是建議：對方收到的仍然是價格與量的事實，要不要行動由他自己決定。</li>
+        <li>朋友沒在用 App？盤中雷達裡每一則訊號右邊都有「分享」，會把那一則連同當天的時間軸做成一張圖，用手機的分享面板傳到 LINE 或任何聊天室。</li>
+        <li>回饋貼圖<span class="tag tag-soon">即將推出</span>：收到分享訊號的人可以回一個貼圖給分享的人，六種——厲害、有眼光、淡淡的哀傷、感謝提醒、竟然發生了、一起觀察。</li>
+      </ul>
+    </div>
+    <div>
+      <div class="share-pair share-pair-stack">
+        <div>
+          <h4>你（小明）的手機</h4>
+          <ul class="msg-list">
+            <li data-sev="orange">
+              <span class="msg-time">10:42</span>
+              <span class="msg-body"><b>2330 台積電 達到自訂下跌價位</b><span>現價 1,050.00，目標 1,050.00</span></span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>好友的手機</h4>
+          <ul class="msg-list">
+            <li data-sev="orange">
+              <span class="msg-time">10:42</span>
+              <span class="msg-body"><b>2330 台積電 達到自訂下跌價位</b><span>現價 1,050.00，目標 1,050.00</span><span class="msg-from">來自 小明 的分享</span></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:1rem;font-size:0.9rem">示意數值，非實際報價。小明設定台積電跌到 1,050 時通知他，並把這一檔分享給好友；盤中一到價，兩邊同時收到同一則，好友那一則多了最後一行。</p>
     </div>
   </section>
 

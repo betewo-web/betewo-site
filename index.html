@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
-<link rel="stylesheet" href="site.css?v=11">
+<link rel="stylesheet" href="site.css?v=12">
 </head>
 <body>
 <header class="site-head">
@@ -47,6 +47,7 @@
         <li><b>不懂技術指標：</b>系統會預設開啟基礎訊號通知，不須擔心不會設定，也有詳細的訊號說明，可以逐步熟悉。</li>
         <li><b>訊號的追蹤條件：</b>能彈性設定簡單或複雜訊號，可系統預設，可自訂，一個幫助建立個人化投資節奏的智能工具。</li>
         <li><b>不知道有哪些值得追蹤的股票：</b>本服務提供每日一千多檔股票的統計報告，是純粹的統計結果，統計公式皆透明可查，不具投資建議，可提供初學者開始學習追蹤變化。</li>
+        <li><b>想和家人朋友一起看：</b>把一檔的訊號設定分享給 App 裡的好友，之後這一檔的每一則通知，你們的手機同時收到；對方不必會設定。</li>
       </ul>
       <div class="hero-cta">
         <a class="btn btn-primary btn-lg" href="https://line.me/R/ti/p/@408csebn" data-cg="add-friend-hero">透過 LINE 登入，30 秒開始</a>
@@ -110,7 +111,7 @@
       <div class="feature">
         <span class="eyebrow">規則</span>
         <h3>自訂通知規則</h3>
-        <p>在 App 裡叫「進階訊號」，和內建的基礎訊號分開設定。價格、漲跌幅、開盤跳空、量能、RSI 達到設定值、MACD、均線、法人籌碼、營收與 EPS 等 22 種條件，在 App 裡就能編輯；廣域追蹤雷達（旗艦版）還能把多個條件混和成一條（混和訊號），例如「向上跳空 2%＋量能達均量 2 倍」同時成立才通知。</p>
+        <p>在 App 裡叫「進階訊號」，和內建的基礎訊號分開設定。價格、漲跌幅、開盤跳空、量能、RSI 達到設定值、MACD、均線、法人籌碼、營收與 EPS 等 22 種條件，在 App 裡就能編輯；多個條件還能混和成一條（混和訊號），例如「向上跳空 2%＋量能達均量 2 倍」同時成立才通知。三個方案都是 6 條、都能混和。</p>
       </div>
       <div class="feature">
         <span class="eyebrow">持股</span>
@@ -123,12 +124,72 @@
         <p>收盤後整理三大法人買賣超、融資融券變化與複合訊號，每則附 0–100 的顯著度，標題只描述資料。</p>
       </div>
       <div class="feature">
+        <span class="eyebrow">分享</span>
+        <h3>好友分享</h3>
+        <p>把一檔自選股的訊號設定分享給 App 裡的好友，對方接受後，這檔每一則通知你們同時收到，他那一則註明「來自 ○○ 的分享」。你改了設定，對方那邊自動跟著換。三個方案都能用。</p>
+      </div>
+      <div class="feature">
         <span class="eyebrow">AI</span>
         <h3>AI 資料白話<span class="tag tag-soon">開發中</span></h3>
         <p>把分數變化與事件翻成白話說明。不做多空判斷、不預測走勢、不給買賣建議。</p>
       </div>
     </div>
     <p class="section-more">想知道每個功能實際怎麼運作？<a href="features.html">看完整功能說明 →</a></p>
+  </div>
+</section>
+
+<section class="section" id="share">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">好友分享</span>
+      <h2>你設定一次，好友跟你同時收到。</h2>
+      <p class="lead">例如你設定台積電跌到 1,050 時通知你，再把這一檔分享給朋友。盤中一到 1,050，兩支手機同時收到同一則訊號。</p>
+    </div>
+    <div class="share-pair">
+      <div>
+        <h4>你（小明）的手機</h4>
+        <ul class="msg-list">
+          <li data-sev="orange">
+            <span class="msg-time">10:42</span>
+            <span class="msg-body"><b>2330 台積電 達到自訂下跌價位</b><span>現價 1,050.00，目標 1,050.00</span></span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>好友的手機</h4>
+        <ul class="msg-list">
+          <li data-sev="orange">
+            <span class="msg-time">10:42</span>
+            <span class="msg-body"><b>2330 台積電 達到自訂下跌價位</b><span>現價 1,050.00，目標 1,050.00</span><span class="msg-from">來自 小明 的分享</span></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="dim" style="margin-top:1rem;font-size:0.88rem">示意數值，非實際報價。好友那一則只多了最後一行，其餘和你收到的一模一樣；兩則都是手機推播，不經 LINE。</p>
+    <ol class="steps share-steps">
+      <li><b>加好友</b><span>在 App 的「分享」分頁顯示條碼讓對方掃，或輸入對方的 12 碼 ID；對方同意就成為好友。這是 App 裡的好友，與 LINE 的好友名單無關。</span></li>
+      <li><b>分享一檔</b><span>從自選股選一檔、勾好友、送出。送出的是這檔目前的訊號設定——基礎訊號開關、你設定的價位、套用在這檔的進階訊號；持有股數與成本不會送出。</span></li>
+      <li><b>同時收到</b><span>對方接受後，這檔出現在他首頁雷達的「分享」那一格，之後每一則通知兩邊同時收到。你改了設定，他那邊自動跟著換，不必重送。</span></li>
+    </ol>
+    <div class="share-when">
+      <div class="notify-step">
+        <span class="notify-k">家人</span>
+        <h3>幫家人盯著那一檔</h3>
+        <p>爸媽或另一半手上的股票，由你設定、分享給他們。接受之後通知直接進他們的手機，不用你每次轉貼。</p>
+      </div>
+      <div class="notify-step">
+        <span class="notify-k">朋友</span>
+        <h3>和朋友看同一檔</h3>
+        <p>各自設定的話，門檻不同、收到的時間也不同。分享之後用的是同一組設定，討論時講的是同一則通知。</p>
+      </div>
+      <div class="notify-step">
+        <span class="notify-k">新手</span>
+        <h3>替剛開始的人設好</h3>
+        <p>朋友還不熟悉怎麼設訊號，先接受你的分享就能收到。要改、要停，都在他自己那一側，隨時可以。</p>
+      </div>
+    </div>
+    <p class="notice" style="margin-top:1.8rem"><b>分享的是通知設定，不是建議。</b>對方收到的仍然是價格與量的事實——哪個價位、多少張，和你自己收到的同一則，沒有多空判斷或買賣建議；要不要行動，由收到的人自己決定。好友分享給你的股票算在你的自選股上限內，你分享出去的不佔你的額度。</p>
+    <p class="section-more">朋友沒在用 App？盤中雷達裡任何一則訊號都能做成一張圖，用手機的分享面板傳到 LINE。<a href="features.html#share">看好友分享的完整說明 →</a></p>
   </div>
 </section>
 
@@ -256,6 +317,7 @@
       <li>盤中雷達：開啟 App 或收到通知時更新</li>
       <li>不含每日評分、統計整理分頁與 K 線</li>
       <li>盤中與盤後內建通知不限則數、持股損益</li>
+      <li>好友分享（與付費方案相同）</li>
     </ul>
     <a class="btn btn-ghost" href="https://line.me/R/ti/p/@408csebn" data-cg="plan-free">加 LINE 好友，免費開始</a>
   </div>
@@ -269,6 +331,7 @@
       <li>盤中雷達持續更新</li>
       <li>統計整理分頁</li>
       <li>盤中與盤後通知、每日評分報告、持股損益、K 線</li>
+      <li>好友分享</li>
       <li>新用戶可免費體驗 10 個交易日</li>
     </ul>
     <a class="btn btn-primary" href="https://line.me/R/ti/p/@408csebn" data-cg="plan-pro">加 LINE 好友開始</a>
@@ -283,6 +346,7 @@
       <li>盤中雷達持續更新</li>
       <li>統計整理分頁</li>
       <li>盤中與盤後通知、每日評分報告、持股損益、K 線</li>
+      <li>好友分享</li>
     </ul>
     <a class="btn btn-primary" href="https://line.me/R/ti/p/@408csebn" data-cg="plan-premium">加 LINE 好友開始</a>
   </div>
@@ -382,11 +446,15 @@
         <div class="a">隨時可以。取消後服務保留到當期結束，下期不再扣款。當期月費不按比例退還，詳見<a href="pricing.html#refund">退款政策</a>。</div>
       </details>
       <details>
+        <summary>可以和朋友一起收同一檔的通知嗎？</summary>
+        <div class="a">可以。把一檔自選股的訊號設定分享給 App 裡的好友，對方接受後，這檔每一則通知你們同時收到，他那一則註明「來自 ○○ 的分享」。你改了設定，對方那邊自動跟著換。三個方案都能用；好友分享給你的股票算在你的自選股上限內。更多見<a href="faq.html#share">常見問題的「好友分享」</a>。</div>
+      </details>
+      <details>
         <summary>這是投資建議嗎？</summary>
         <div class="a">不是。CapitalGuard 是公開市場資料的整理與統計工具，所有分數、訊號、事件、篩選結果與 AI 說明都是資料計算的呈現，不對任何股票做買賣、持有或進出場的推介。本服務並非證券投資顧問事業，投資決策請自行判斷。</div>
       </details>
     </div>
-    <p style="margin-top:2rem"><a href="faq.html">看完整常見問題（25 題）→</a></p>
+    <p style="margin-top:2rem"><a href="faq.html">看完整常見問題（33 題）→</a></p>
   </div>
 </section>
 

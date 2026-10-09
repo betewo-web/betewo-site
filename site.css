@@ -467,6 +467,7 @@ table.compare th.lift, table.compare td.lift { background: rgba(139, 124, 255, 0
 .share-pair h4 { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.12em; color: var(--muted); margin-bottom: 0.6rem; }
 .msg-body > .msg-from { color: var(--accent); font-size: 0.88rem; margin-top: 0.3rem; }
 .share-steps { margin-top: 2.6rem; }
-.share-when { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.6rem; }
-@media (max-width: 860px) { .share-when { grid-template-columns: 1fr; gap: 1.1rem; } }
+.share-when { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; margin-top: 2.6rem; }
+@media (max-width: 1000px) { .share-when { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .share-when { grid-template-columns: 1fr; gap: 1.1rem; } }
 @media (max-width: 700px) { .share-pair { grid-template-columns: 1fr; } }

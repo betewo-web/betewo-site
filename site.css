@@ -481,3 +481,6 @@ table.compare th.lift, table.compare td.lift { background: rgba(139, 124, 255, 0
 .share-icon p { color: var(--muted); font-size: 0.93rem; }
 @media (max-width: 760px) { .share-icons { grid-template-columns: 1fr; gap: 1rem; } .share-icon-art { width: 58px; height: 58px; } }
 .feature-detail > .share-icons { grid-column: 1 / -1; margin-bottom: 0.4rem; }
+/* 功能九宮格的線條圖示（八格各一個，52px） */
+.feature-art { display: block; width: 52px; height: 52px; margin-bottom: 0.75rem; }
+@media (max-width: 560px) { .feature-art { width: 46px; height: 46px; } }

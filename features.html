@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
-<link rel="stylesheet" href="site.css?v=14">
+<link rel="stylesheet" href="site.css?v=15">
 </head>
 <body>
 <header class="site-head">
@@ -209,6 +209,22 @@
   </section>
 
   <section class="feature-detail" id="share">
+    <div class="share-icons">
+      <div class="share-icon">
+        <svg class="share-icon-art" viewBox="0 0 64 64" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="15" width="30" height="32" rx="6" stroke="var(--accent)" stroke-width="2.6"/><path d="M9 39 15 32 20 36 27 24" stroke="var(--accent-2)" stroke-width="2.4"/><path d="M35 28 45 21" stroke="var(--accent)" stroke-width="2.4"/><path d="M41 21.3 45 21 43.3 24.6" stroke="var(--accent)" stroke-width="2.4"/><path d="M35 34 45 41" stroke="var(--accent)" stroke-width="2.4"/><path d="M41 40.7 45 41 43.3 37.4" stroke="var(--accent)" stroke-width="2.4"/><circle cx="54.5" cy="15" r="4" stroke="var(--accent)" stroke-width="2.4"/><path d="M48 25.5c0-3.6 2.9-5.8 6.5-5.8s6.5 2.2 6.5 5.8" stroke="var(--accent)" stroke-width="2.4"/><circle cx="54.5" cy="41" r="4" stroke="var(--accent)" stroke-width="2.4"/><path d="M48 51.5c0-3.6 2.9-5.8 6.5-5.8s6.5 2.2 6.5 5.8" stroke="var(--accent)" stroke-width="2.4"/></svg>
+        <div>
+          <h3>把一檔分享給好友</h3>
+          <p>送出的是這一檔的訊號設定。訊號成立的那一刻，你和好友的手機同時收到同一則；對方不必會設定，你改了設定他那邊自動跟著換。</p>
+        </div>
+      </div>
+      <div class="share-icon">
+        <svg class="share-icon-art" viewBox="0 0 64 64" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 5h18a7 7 0 0 1 7 7v8a7 7 0 0 1-7 7H18l-6 6 .6-6H10a7 7 0 0 1-7-7v-8a7 7 0 0 1 7-7Z" stroke="var(--accent)" stroke-width="2.6"/><path d="M11 13h16M11 19.5h10" stroke="var(--muted)" stroke-width="2.2"/><path d="M36 28h18a7 7 0 0 1 7 7v8a7 7 0 0 1-7 7h-2.6l.6 6-6-6H36a7 7 0 0 1-7-7v-8a7 7 0 0 1 7-7Z" stroke="var(--accent-2)" stroke-width="2.6"/><path d="M37 36h16M37 42.5h10" stroke="var(--muted)" stroke-width="2.2"/></svg>
+        <div>
+          <h3>就在那一檔裡討論</h3>
+          <p>不論你分享給朋友或者朋友分享給你的每一檔，各自有一個對話框，在偵測到訊號時可以直接交流討論。若好友說話會推播提醒你。</p>
+        </div>
+      </div>
+    </div>
     <div>
       <span class="eyebrow">分享</span>
       <h2>好友分享</h2>
@@ -220,6 +236,7 @@
         <li>對方隨時可以移除，或對這一檔選「不再接收」。好友分享給他的股票算在他的自選股上限內（自選股＋好友分享），你分享出去的不佔你的額度；分享裡的進階訊號不佔收件人自己的 6 條額度，他接受之後整則生效。</li>
         <li>好友是在 App 的「分享」分頁互相加的：顯示條碼讓對方掃、掃對方的條碼，或輸入 12 碼 ID 搜尋，對方同意才成為好友。與 LINE 的好友名單無關，我們不讀取你的 LINE 聯絡人。</li>
         <li>三個方案都能用，免費版也可以。分享的是通知設定，不是建議：對方收到的仍然是價格與量的事實，要不要行動由他自己決定。</li>
+        <li>對方接受之後，這一檔還會多一個對話框，你們可以直接在那一檔裡討論；見下面的<a href="#chat">分享股對話框</a>。</li>
         <li>朋友沒在用 App？盤中雷達裡每一則訊號右邊都有「分享」，會把那一則連同當天的時間軸做成一張圖，用手機的分享面板傳到 LINE 或任何聊天室。</li>
         <li>回饋貼圖<span class="tag tag-soon">即將推出</span>：收到分享訊號的人可以回一個貼圖給分享的人，六種——厲害、有眼光、淡淡的哀傷、感謝提醒、竟然發生了、一起觀察。</li>
       </ul>
@@ -246,6 +263,26 @@
         </div>
       </div>
       <p class="muted" style="margin-top:1rem;font-size:0.9rem">示意數值，非實際報價。你設定台積電跌到 1,050 時通知你，並把這一檔分享給好友；盤中一到價，兩邊同時收到同一則，好友那一則多了最後一行，○○ 是你的 LINE 顯示名稱。</p>
+    </div>
+  </section>
+
+  <section class="feature-detail" id="chat">
+    <div>
+      <span class="eyebrow">對話</span>
+      <h2>分享股對話框</h2>
+      <p class="lead">不論你分享給朋友、或朋友分享給你的每一檔，各自有一個對話框。訊號成立的時候，你們就在那一檔裡直接交流討論，不必再切到別的聊天室貼代號、貼截圖。</p>
+      <ul>
+        <li>入口在盤中雷達最上面一條，帶最新一則的預覽與未讀數；點哪一條就進哪一間。</li>
+        <li>一則分享就是一間房：你分享出去的那一則、好友分享給你的那一則，各自分開。房裡剛好兩個人時標題寫「與 ○○ 聊聊」，三個人以上寫「與群組聊聊」。</li>
+        <li>有人說話會推播提醒你。標題是「台積電 2330 的對話」這樣一行，內文只寫誰傳了幾則——訊息內容一個字都不帶。同一間房對同一個人至少隔 10 分鐘才再提醒一次。</li>
+        <li>未讀數在三個地方看得到：底部的「首頁」、首頁的「好友分享」鈕，以及那一格的每一檔。</li>
+        <li>純文字，不支援圖片與貼圖。每一則訊息 5 天後消失，自己傳的隨時可以刪掉。</li>
+        <li>分享結束或到期之後那一間變成唯讀：送不出新訊息，保留期內還讀得到。</li>
+        <li>有分享就有對話框，三個方案都能用。</li>
+      </ul>
+    </div>
+    <div class="notice">
+      <b>對話裡的話是使用者說的，不是 App 的判斷。</b>成員之間講的看法不代表本服務的意見，也不是投資建議。每一則訊息都可以檢舉，自己傳的可以刪掉，而且 5 天後一律自動消失。
     </div>
   </section>
 

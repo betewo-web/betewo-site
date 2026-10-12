@@ -484,3 +484,12 @@ table.compare th.lift, table.compare td.lift { background: rgba(139, 124, 255, 0
 /* 功能九宮格的線條圖示（八格各一個，52px） */
 .feature-art { display: block; width: 52px; height: 52px; margin-bottom: 0.75rem; }
 @media (max-width: 560px) { .feature-art { width: 46px; height: 46px; } }
+
+/* 60 秒短片：直式影片，桌機不要撐滿整欄（9:16 放到 1000px 寬會變成一根柱子） */
+.promo { margin: 0; display: flex; flex-direction: column; align-items: flex-start; }
+.promo video {
+  display: block; width: 100%; max-width: 340px; height: auto;
+  border: 1px solid var(--border-strong); border-radius: var(--radius);
+  box-shadow: var(--shadow-soft); background: #07060d;
+}
+.promo figcaption { margin-top: 0.9rem; color: var(--muted); font-size: 0.88rem; }

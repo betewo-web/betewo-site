@@ -247,7 +247,11 @@ p + p { margin-top: 1em; }
   padding: 1.6rem 1.5rem; display: flex; flex-direction: column; gap: 1rem;
 }
 .plan.lift { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent), var(--shadow-soft); position: relative; }
-.plan.lift::before { content: "從免費版升級的第一站"; position: absolute; top: -0.8rem; left: 1.2rem; background: var(--accent); color: var(--accent-ink); font-size: 0.72rem; font-weight: 700; padding: 0.2rem 0.65rem; border-radius: 999px; }
+/* 卡片上方那顆「從免費版升級的第一站」緞帶 2026-10-20 移除（Howard）：只剩一個免費方案，
+   沒有「從哪裡升級」這回事。框線強調留著。要再分階時把下面這一條復原即可：
+   .plan.lift::before { content: "從免費版升級的第一站"; position: absolute; top: -0.8rem;
+     left: 1.2rem; background: var(--accent); color: var(--accent-ink); font-size: 0.72rem;
+     font-weight: 700; padding: 0.2rem 0.65rem; border-radius: 999px; } */
 .plan-name { font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.12em; color: var(--muted); text-transform: uppercase; }
 .plan-name b { display: block; font-family: var(--font-body); font-size: 1.2rem; letter-spacing: 0; color: var(--text); text-transform: none; margin-top: 0.15rem; }
 .price { font-family: var(--font-display); font-size: 2.4rem; font-weight: 900; line-height: 1; font-variant-numeric: tabular-nums; }

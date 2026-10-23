@@ -78,6 +78,7 @@
     <li><strong>瀏覽器推播服務</strong>：Apple、Google 或 Mozilla 依你的瀏覽器提供 Web Push 傳遞，通知內容經加密後傳送。</li>
     <li><strong>OpenAI</strong>：AI 功能上線後，將相關股票的公開資料與你的問題送交其語言模型處理，<strong>不包含你的姓名、LINE 識別碼或聯絡方式</strong>；涉及買賣建議的問題由系統直接回覆，不送交模型。</li>
     <li><strong>Cloudflare Workers AI（TypeSafe Jev）</strong>：「助手」分頁把你打的那一句話與極少的頁面狀態（在哪一頁、有沒有提到股票）送交分類模型，決定要執行哪一個功能，<strong>不包含你的姓名、LINE 識別碼或聯絡方式</strong>；模型不產生任何文字，回覆由系統用固定句與你自己的資料組成。</li>
+    <li><strong>Cloudflare Workers AI（持股截圖辨識）</strong>：你在「助手」或「持股」頁上傳券商 App 的庫存截圖時，圖片會送交 Cloudflare Workers AI 的影像模型，只讀出股票代號、名稱、股數與均價。<strong>截圖上若有帳號或姓名，模型看得到，但我們不讀取、不保存</strong>：圖片只用在這一次辨識，不寫入任何紀錄，也不經過會留存內容的紀錄服務；讀出來的持股要你按下確認才會更新。</li>
     <li><strong>Google Fonts</strong>：本網站（不含 App）自 Google 載入網頁字型，你的瀏覽器會向 Google 請求字型檔並附帶 IP 位址。</li>
   </ul>
 

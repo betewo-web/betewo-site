@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>常見問題 · CapitalGuard 股市雷達</title>
-<meta name="description" content="CapitalGuard 常見問題：怎麼開始、iPhone 與 Android 怎麼收到推播通知、分數怎麼算、支撐壓力怎麼定、資料來源、自訂通知規則、好友分享、隱私與方案。">
+<meta name="description" content="CapitalGuard 常見問題：怎麼開始、iPhone 與 Android 怎麼收到推播通知、分數怎麼算、支撐壓力怎麼定、資料來源、自訂通知規則、好友分享、助手、隱私與方案。">
 <link rel="canonical" href="https://betewo-web.github.io/betewo-site/faq.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="CapitalGuard 股市雷達">
@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
-<link rel="stylesheet" href="site.css?v=19">
+<link rel="stylesheet" href="site.css?v=20">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -237,6 +237,46 @@
   },
   {
    "@type": "Question",
+   "name": "助手是什麼？可以用來做什麼？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "首頁第四個分頁「助手」：打一句話，查資料、改設定、記持股。例如「台積電整理一下」一張卡看完收盤、支撐壓力、均線與今天的訊號；「台積電跌到 900 提醒我」設到價提醒；「我有 2 張台積電成本 900」記錄持股；「今天有什麼重點」整理自選股的訊號、持股損益與接下來的日程。也可以上傳券商 App 的庫存截圖更新持股，或用手機鍵盤上的麥克風說話。所有使用者都能用，每天最多 100 次。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "助手會自己改我的設定嗎？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "不會。加入或移除自選股、到價提醒、訊號開關、進階訊號、持股與交易紀錄、加好友，每一筆都先列成一張確認卡，寫明要改哪一檔、改成什麼，你按下主鍵才會寫入；按「取消」就什麼都不動。剛做完的大多可以按「復原」改回原本的，問「我剛剛改了什麼」會列出助手最近替你做過的事。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "助手的回答是 AI 寫的嗎？會不會講錯？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "AI 只負責判斷你這一句要用哪一個功能，不寫回答。答案用 App 裡已有的資料——報價、支撐壓力、訊號、日程、你的持股——套固定格式組出來，名詞解釋是事先寫好的固定說明，所以不會出現模型自己編的數字或看法；資料本身仍可能延遲或有誤。沒把握你要的是什麼時，它會列出兩三個可能讓你選，不會猜一個就去做。讀庫存截圖是例外：股數與均價是影像模型讀出來的，所以一定要你核對、按確認才會更新。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "可以問它該不該買，或請它幫我下單嗎？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "不行。問「台積電可以買嗎」「會不會漲」這類問題，它回一段固定說明，不提供買賣建議、不研判走勢、不預測股價或目標價。要它下單、掛單，它會說明本服務不代為下單，買賣請到你的券商 App；成交之後說「今天 900 元買進台積電一張」，它可以幫你記下這一筆。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "我在助手打的字會送到哪裡？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "你打的那一句（最多 200 字）與極少的頁面狀態（在哪一頁、有沒有提到股票）會送到 Cloudflare Workers AI 判斷類別，不含你的姓名、LINE 識別碼或聯絡方式。這一句與分到哪一類會記在我們的紀錄裡，用來檢查分類準不準，一般 30 天後刪除，少數挑出來改進分類的句子會留得比較久。畫面上的對話只存在你這支手機上（最多 40 則，7 天沒開就清掉，登出也會刪除）。上傳的庫存截圖只用在那一次辨識，不保存。詳見隱私權政策。"
+   }
+  },
+  {
+   "@type": "Question",
    "name": "你們看得到我的 LINE 訊息嗎？",
    "acceptedAnswer": {
     "@type": "Answer",
@@ -248,7 +288,7 @@
    "name": "要綁券商或銀行帳號嗎？",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "不用。持股的股數與成本由你自己在 App 裡輸入，只用來計算市值與未實現損益，不連線到任何券商，也不能下單。"
+    "text": "不用。持股的股數與成本由你自己在 App 裡輸入，或上傳券商 App 的庫存截圖、核對後按確認更新；只用來計算市值與未實現損益，不連線到任何券商，也不能下單。"
    }
   },
   {
@@ -264,7 +304,7 @@
    "name": "App 是免費的嗎？",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "是。目前所有功能免費開放，系統上只有「基礎版」一個方案：10 檔自選股、6 條進階訊號（可以混和條件）、盤中與盤後內建通知（不限則數）、盤中雷達持續更新、每日評分與統計整理分頁、持股損益、K 線、好友分享都包含。不需要填付款資料，不會建立訂單，也不會扣款。"
+    "text": "是。目前所有功能免費開放，系統上只有「基礎版」一個方案：10 檔自選股、6 條進階訊號（可以混和條件）、盤中與盤後內建通知（不限則數）、盤中雷達持續更新、每日評分與統計整理分頁、持股損益、K 線、好友分享、助手都包含。不需要填付款資料，不會建立訂單，也不會扣款。"
    }
   },
   {
@@ -319,12 +359,13 @@
 <div class="wrap doc-head">
   <span class="eyebrow">常見問題</span>
   <h1>你大概會想先問這些。</h1>
-  <p class="lead" style="margin-top:1rem">開始使用、通知怎麼送、分數怎麼算、資料從哪裡來、好友分享、隱私與方案。找不到答案就<a href="contact.html">寫信問我們</a>。</p>
+  <p class="lead" style="margin-top:1rem">開始使用、通知怎麼送、分數怎麼算、資料從哪裡來、好友分享、助手、隱私與方案。找不到答案就<a href="contact.html">寫信問我們</a>。</p>
   <div class="toc">
     <a href="#start">開始使用</a>
     <a href="#score">分數與訊號</a>
     <a href="#rules">自訂通知規則</a>
     <a href="#share">好友分享</a>
+    <a href="#assistant">助手</a>
     <a href="#privacy">隱私與安全</a>
     <a href="#plan">方案與費用</a>
   </div>
@@ -466,6 +507,34 @@
   </div>
 </section>
 
+<section class="section" id="assistant">
+  <div class="wrap">
+    <div class="section-head"><h2>助手</h2></div>
+    <div class="faq">
+      <details>
+        <summary>助手是什麼？可以用來做什麼？</summary>
+        <div class="a">首頁第四個分頁「助手」：打一句話，查資料、改設定、記持股。例如「台積電整理一下」一張卡看完收盤、支撐壓力、均線與今天的訊號；「台積電跌到 900 提醒我」設到價提醒；「我有 2 張台積電成本 900」記錄持股；「今天有什麼重點」整理自選股的訊號、持股損益與接下來的日程。也可以上傳券商 App 的庫存截圖更新持股，或用手機鍵盤上的麥克風說話。所有使用者都能用，每天最多 100 次。</div>
+      </details>
+      <details>
+        <summary>助手會自己改我的設定嗎？</summary>
+        <div class="a">不會。加入或移除自選股、到價提醒、訊號開關、進階訊號、持股與交易紀錄、加好友，每一筆都先列成一張確認卡，寫明要改哪一檔、改成什麼，你按下主鍵才會寫入；按「取消」就什麼都不動。剛做完的大多可以按「復原」改回原本的，問「我剛剛改了什麼」會列出助手最近替你做過的事。</div>
+      </details>
+      <details>
+        <summary>助手的回答是 AI 寫的嗎？會不會講錯？</summary>
+        <div class="a">AI 只負責判斷你這一句要用哪一個功能，不寫回答。答案用 App 裡已有的資料——報價、支撐壓力、訊號、日程、你的持股——套固定格式組出來，名詞解釋是事先寫好的固定說明，所以不會出現模型自己編的數字或看法；資料本身仍可能延遲或有誤。沒把握你要的是什麼時，它會列出兩三個可能讓你選，不會猜一個就去做。讀庫存截圖是例外：股數與均價是影像模型讀出來的，所以一定要你核對、按確認才會更新。</div>
+      </details>
+      <details>
+        <summary>可以問它該不該買，或請它幫我下單嗎？</summary>
+        <div class="a">不行。問「台積電可以買嗎」「會不會漲」這類問題，它回一段固定說明，不提供買賣建議、不研判走勢、不預測股價或目標價。要它下單、掛單，它會說明本服務不代為下單，買賣請到你的券商 App；成交之後說「今天 900 元買進台積電一張」，它可以幫你記下這一筆。</div>
+      </details>
+      <details>
+        <summary>我在助手打的字會送到哪裡？</summary>
+        <div class="a">你打的那一句（最多 200 字）與極少的頁面狀態（在哪一頁、有沒有提到股票）會送到 Cloudflare Workers AI 判斷類別，不含你的姓名、LINE 識別碼或聯絡方式。這一句與分到哪一類會記在我們的紀錄裡，用來檢查分類準不準，一般 30 天後刪除，少數挑出來改進分類的句子會留得比較久。畫面上的對話只存在你這支手機上（最多 40 則，7 天沒開就清掉，登出也會刪除）。上傳的庫存截圖只用在那一次辨識，不保存。詳見<a href="privacy.html">隱私權政策</a>。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="privacy">
   <div class="wrap">
     <div class="section-head"><h2>隱私與安全</h2></div>
@@ -476,7 +545,7 @@
       </details>
       <details>
         <summary>要綁券商或銀行帳號嗎？</summary>
-        <div class="a">不用。持股的股數與成本由你自己在 App 裡輸入，只用來計算市值與未實現損益，不連線到任何券商，也不能下單。</div>
+        <div class="a">不用。持股的股數與成本由你自己在 App 裡輸入，或上傳券商 App 的庫存截圖、核對後按確認更新；只用來計算市值與未實現損益，不連線到任何券商，也不能下單。</div>
       </details>
       <details>
         <summary>付款資料存在哪裡？</summary>
@@ -493,7 +562,7 @@
     <div class="faq">
       <details>
         <summary>App 是免費的嗎？</summary>
-        <div class="a">是。目前所有功能免費開放，系統上只有「基礎版」一個方案：10 檔自選股、6 條進階訊號（可以混和條件）、盤中與盤後內建通知（不限則數）、盤中雷達持續更新、每日評分與統計整理分頁、持股損益、K 線、好友分享都包含。不需要填付款資料，不會建立訂單，也不會扣款。</div>
+        <div class="a">是。目前所有功能免費開放，系統上只有「基礎版」一個方案：10 檔自選股、6 條進階訊號（可以混和條件）、盤中與盤後內建通知（不限則數）、盤中雷達持續更新、每日評分與統計整理分頁、持股損益、K 線、好友分享、助手都包含。不需要填付款資料，不會建立訂單，也不會扣款。</div>
       </details>
       <details>
         <summary>有使用期限嗎？</summary>

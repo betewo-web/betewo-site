@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
-<link rel="stylesheet" href="site.css?v=19">
+<link rel="stylesheet" href="site.css?v=20">
 </head>
 <body>
 <header class="site-head">
@@ -46,6 +46,7 @@
         <li><b>有哪些訊號：</b>「股價已下跌到你設定的價位」、「股價站上一年新高」、「股價跳空開高 3%」、「法人連續 3 日買超」等數十種訊號，包括開盤中以及收盤後經過整理的訊號。</li>
         <li><b>不懂技術指標：</b>系統會預設開啟基礎訊號通知，不須擔心不會設定，也有詳細的訊號說明，可以逐步熟悉。</li>
         <li><b>訊號的追蹤條件：</b>能彈性設定簡單或複雜訊號，可系統預設，可自訂，一個幫助建立個人化投資節奏的智能工具。</li>
+        <li><b>不想研究設定在哪：</b>跟「助手」說一句<span class="ask-say">「台積電跌到 900 提醒我」</span>，按一下確認就設好。</li>
         <li><b>不知道有哪些值得追蹤的股票：</b>本服務提供每日一千多檔股票的統計報告，是純粹的統計結果，統計公式皆透明可查，不具投資建議，可提供初學者開始學習追蹤變化。</li>
         <li><b>想和家人朋友一起看：</b>股市雷達中，可以加入好友，把你已經設定好的股票資訊分享給你 App 裡的好友，會將你們連接在同一個平台上，你可以和朋友直接對話，針對個股交流意見，並且這一檔偵測到重要變化時，會同時發送通知到你們的手機，對方不必會設定，大幅降低討論股票的溝通成本。</li>
       </ul>
@@ -159,6 +160,12 @@
         <p>不論你分享給朋友、或朋友分享給你的每一檔，各自有一個對話框，開在盤中雷達最上面一條。偵測到訊號時就在那一檔裡直接交流討論；有人說話會推播提醒你，內文不寫訊息內容。所有使用者都能用。</p>
       </div>
       <div class="feature">
+        <svg class="feature-art" viewBox="0 0 64 64" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <rect x="4.3" y="7" width="38" height="27" rx="6.5" stroke="var(--accent)" stroke-width="2.5"/> <path d="M11.5 16H32.5M11.5 24.5H25" stroke="var(--accent)" stroke-width="2.5"/> <path d="M53 7Q54.2 13.8 61 15Q54.2 16.2 53 23Q51.8 16.2 45 15Q51.8 13.8 53 7Z" fill="var(--accent-2)" stroke="none"/> <rect x="4.3" y="42" width="55.4" height="15" rx="7.5" stroke="var(--accent)" stroke-width="2.5"/> <path d="M12 49.5H30" stroke="var(--accent)" stroke-width="2.5"/> <circle cx="51.5" cy="49.5" r="4.2" fill="var(--accent-2)" stroke="none"/> </svg>
+        <span class="eyebrow">助手</span>
+        <h3>一句話查詢與設定</h3>
+        <p>查資料、設提醒、記持股，打一句話就好；動到設定前先給你確認。所有使用者都能用。</p>
+      </div>
+      <div class="feature">
         <svg class="feature-art" viewBox="0 0 64 64" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"> <path d="M26 16Q27.4 33.6 45 35Q27.4 36.4 26 54Q24.6 36.4 7 35Q24.6 33.6 26 16Z" stroke="var(--accent)" stroke-width="2.5"/> <path d="M47 10Q48.4 17.6 56 19Q48.4 20.4 47 28Q45.6 20.4 38 19Q45.6 17.6 47 10Z" fill="var(--accent-2)" stroke="none"/> </svg>
         <span class="eyebrow">AI</span>
         <h3>AI 資料白話<span class="tag tag-soon">開發中</span></h3>
@@ -242,6 +249,71 @@
     </div>
     <p class="notice" style="margin-top:1.8rem"><b>分享的是通知設定，不是建議。</b>對方收到的仍然是價格與量的事實——哪個價位、多少張，和你自己收到的同一則，沒有多空判斷或買賣建議；要不要行動，由收到的人自己決定。好友分享給你的股票不佔你的自選股上限，你分享出去的也不佔。</p>
     <p class="section-more">朋友沒在用 App？盤中雷達裡任何一則訊號都能做成一張圖，用手機的分享面板傳到 LINE。<a href="features.html#share">看好友分享的完整說明 →</a></p>
+  </div>
+</section>
+
+<section class="section" id="assistant">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">助手</span>
+      <h2>想到什麼，打一句話就好。</h2>
+      <p class="lead">不必記得功能在哪一頁。查資料、設提醒、記持股，跟助手說一句就好。</p>
+    </div>
+    <div class="ask-wrap">
+      <figure class="ask-demo">
+        <div class="ask-mock">
+          <div class="ask-title"><i class="ask-star">✦</i>助手</div>
+          <p class="ask-user">我的持股損益</p>
+          <div class="ask-card">
+            <div class="ask-card-head"><i class="ask-star">✦</i>我的持股</div>
+            <div class="ask-card-sub">2 檔・3 張・以 10/23 收盤價計算</div>
+            <div class="ask-rows">
+              <div class="ask-row"><b>總市值</b><span>2,304,500 元</span></div>
+              <div class="ask-row"><b>投入成本</b><span>1,990,000 元</span></div>
+              <div class="ask-row"><b>未實現損益</b><span class="up">+314,500 元</span><i>+15.80%</i></div>
+            </div>
+          </div>
+          <p class="ask-user">台積電跌到 900 提醒我</p>
+          <div class="ask-card">
+            <div class="ask-card-head"><i class="ask-star">✦</i>設定到價提醒？</div>
+            <div class="ask-rows">
+              <div class="ask-row"><b>股票</b><span>台積電 2330</span><i>收盤 1,050</i></div>
+              <div class="ask-row"><b>跌到</b><span>900</span><i>距 −14.29%</i></div>
+            </div>
+            <div class="ask-btns"><span class="main">設定</span><span>改一下</span><span>取消</span></div>
+          </div>
+          <div class="ask-input"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="1.8"/><path d="M4 18l5.5-5 4 3.5 3-2.5 4.5 4"/></svg><span>試試：今天有什麼重點</span><i></i></div>
+        </div>
+        <figcaption>示意畫面，數字非實際報價。</figcaption>
+      </figure>
+      <div class="ask-perks">
+        <div class="ask-perk">
+          <svg class="ask-perk-art" viewBox="0 0 64 64" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 7H30A6 6 0 0 1 36 13V27A6 6 0 0 1 30 33H20L12 40V33H10A6 6 0 0 1 4 27V13A6 6 0 0 1 10 7Z" stroke="var(--accent)" stroke-width="2.5"/><path d="M11 16H29M11 24H22" stroke="var(--accent)" stroke-width="2.5"/><path d="M40.05 39A7.5 7.5 0 0 1 55.05 39C55.05 47.75 58.8 50.25 58.8 50.25H36.3C36.3 50.25 40.05 47.75 40.05 39Z" stroke="var(--accent-2)" stroke-width="2.5"/><circle cx="47.55" cy="56.5" r="3.2" fill="var(--accent-2)" stroke="none"/></svg>
+          <div><h3>一句話設好提醒</h3><p>打<span class="ask-say">「台積電跌到 900 提醒我」</span>，不用找設定頁。</p></div>
+        </div>
+        <div class="ask-perk">
+          <svg class="ask-perk-art" viewBox="0 0 64 64" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.3" y="7" width="55.4" height="50" rx="7" stroke="var(--accent)" stroke-width="2.5"/><path d="M12 30L20 22L28 26.5L38 16L52 13" stroke="var(--accent-2)" stroke-width="2.5"/><path d="M12 40H52M12 48H36" stroke="var(--accent)" stroke-width="2.5"/></svg>
+          <div><h3>一張卡看完一檔</h3><p>打<span class="ask-say">「台積電整理一下」</span>，價格、關卡、訊號一次到位。</p></div>
+        </div>
+        <div class="ask-perk">
+          <svg class="ask-perk-art" viewBox="0 0 64 64" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M30 14A20 20 0 1 0 50 34H30Z" stroke="var(--accent)" stroke-width="2.5"/><path d="M35 9A20 20 0 0 1 55 29H35Z" fill="var(--accent-2)" stroke="none"/></svg>
+          <div><h3>持股賺賠，問了就知道</h3><p>打<span class="ask-say">「我的持股損益」</span>，市值和損益馬上算好。</p></div>
+        </div>
+        <div class="ask-perk">
+          <svg class="ask-perk-art" viewBox="0 0 64 64" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="4" width="28" height="54" rx="6" stroke="var(--accent)" stroke-width="2.5"/><path d="M17 16H31M17 24H31M17 32H26" stroke="var(--accent)" stroke-width="2.5"/><circle cx="45" cy="45" r="12" fill="var(--accent-2)" stroke="none"/><path d="M39.5 45.2L43.4 49L50.5 41.5" stroke="var(--accent-ink)" stroke-width="3"/></svg>
+          <div><h3>截圖就記好持股</h3><p>上傳券商 App 的庫存截圖，讀出股數與均價。</p></div>
+        </div>
+        <div class="ask-perk">
+          <svg class="ask-perk-art" viewBox="0 0 64 64" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M32 5L53 12.5V29C53 43 44 53.5 32 58.5C20 53.5 11 43 11 29V12.5Z" stroke="var(--accent)" stroke-width="2.5"/><path d="M22.5 31.5L29.5 38.5L42.5 24.5" stroke="var(--accent-2)" stroke-width="3"/></svg>
+          <div><h3>按下去才生效</h3><p>動到自選股、提醒或持股前，先給你一張確認卡。</p></div>
+        </div>
+        <div class="ask-perk">
+          <svg class="ask-perk-art" viewBox="0 0 64 64" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="18" y="5" width="16" height="30" rx="8" stroke="var(--accent)" stroke-width="2.5"/><path d="M11 28A15 15 0 0 0 41 28M26 43V53M18 55H34" stroke="var(--accent)" stroke-width="2.5"/><path d="M48 17Q53 24 48 31M54 11Q63 24 54 37" stroke="var(--accent-2)" stroke-width="2.5"/></svg>
+          <div><h3>用說的也行</h3><p>點鍵盤上的麥克風，說一句就好。</p></div>
+        </div>
+      </div>
+    </div>
+    <p class="ask-note">只整理資料，不提供買賣建議、不代為下單。所有使用者都能用，每天 100 次。<a href="features.html#assistant">看完整說明 →</a></p>
   </div>
 </section>
 
@@ -357,7 +429,7 @@
     <div class="section-head">
       <span class="eyebrow">方案</span>
       <h2>現在是免費的。</h2>
-      <p class="lead">系統上只有一個方案——<b>基礎版</b>，而且不收費。加 LINE 好友建立帳號就是基礎版：10 檔自選股、6 條進階訊號（可以混和條件）、盤中雷達持續更新、每日評分與統計整理分頁、K 線、持股損益、好友分享全部包含，沒有試用期、目前也沒有到期日。</p>
+      <p class="lead">系統上只有一個方案——<b>基礎版</b>，而且不收費。加 LINE 好友建立帳號就是基礎版：10 檔自選股、6 條進階訊號（可以混和條件）、盤中雷達持續更新、每日評分與統計整理分頁、K 線、持股損益、好友分享、助手全部包含，沒有試用期、目前也沒有到期日。</p>
     </div>
     <div class="plans plans-one">
   <div class="plan lift">
@@ -371,6 +443,7 @@
       <li>盤中與盤後內建通知不限則數</li>
       <li>持股損益、K 線</li>
       <li>好友分享（分享訊號設定給好友、接收好友的分享）</li>
+      <li>助手（一句話查詢、設定、記持股，每天 100 次）</li>
     </ul>
     <a class="btn btn-primary" href="https://line.me/R/ti/p/@408csebn" data-cg="plan-pro">加 LINE 好友，免費開始</a>
   </div>
@@ -464,7 +537,7 @@
       </details>
       <details>
         <summary>App 是免費的嗎？</summary>
-        <div class="a">是。目前所有功能免費開放，系統上只有「基礎版」一個方案：10 檔自選股、6 條進階訊號（可以混和條件）、盤中與盤後內建通知（不限則數）、盤中雷達持續更新、每日評分與統計整理分頁、持股損益、K 線、好友分享都包含。沒有使用期限，也不會扣款。</div>
+        <div class="a">是。目前所有功能免費開放，系統上只有「基礎版」一個方案：10 檔自選股、6 條進階訊號（可以混和條件）、盤中與盤後內建通知（不限則數）、盤中雷達持續更新、每日評分與統計整理分頁、持股損益、K 線、好友分享、助手都包含。沒有使用期限，也不會扣款。</div>
       </details>
       <details>
         <summary>會自動扣款嗎？</summary>
@@ -475,11 +548,15 @@
         <div class="a">可以。把一檔自選股的訊號設定分享給 App 裡的好友，對方接受後，這檔每一則通知你們同時收到，他那一則註明「來自 ○○ 的分享」。你改了設定，對方那邊自動跟著換。所有使用者都能用；好友分享給你的股票不佔你的自選股上限。更多見<a href="faq.html#share">常見問題的「好友分享」</a>。</div>
       </details>
       <details>
+        <summary>助手會自己改我的設定嗎？</summary>
+        <div class="a">不會。加入或移除自選股、到價提醒、訊號開關、進階訊號、持股與交易紀錄，助手每一筆都先列成確認卡，你按下去才寫入，按「取消」就什麼都不動。它也不代為下單，買賣請到你的券商 App。更多見<a href="faq.html#assistant">常見問題的「助手」</a>。</div>
+      </details>
+      <details>
         <summary>這是投資建議嗎？</summary>
         <div class="a">不是。CapitalGuard 是公開市場資料的整理與統計工具，所有分數、訊號、事件、篩選結果與 AI 說明都是資料計算的呈現，不對任何股票做買賣、持有或進出場的推介。本服務並非證券投資顧問事業，投資決策請自行判斷。</div>
       </details>
     </div>
-    <p style="margin-top:2rem"><a href="faq.html">看完整常見問題（33 題）→</a></p>
+    <p style="margin-top:2rem"><a href="faq.html">看完整常見問題（39 題）→</a></p>
   </div>
 </section>
 

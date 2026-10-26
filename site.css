@@ -488,9 +488,78 @@ table.compare th.lift, table.compare td.lift { background: rgba(139, 124, 255, 0
 .share-icon p { color: var(--muted); font-size: 0.93rem; }
 @media (max-width: 760px) { .share-icons { grid-template-columns: 1fr; gap: 1rem; } .share-icon-art { width: 58px; height: 58px; } }
 .feature-detail > .share-icons { grid-column: 1 / -1; margin-bottom: 0.4rem; }
-/* 功能九宮格的線條圖示（八格各一個，52px） */
+/* 功能九宮格的線條圖示（九格各一個，52px；第九格「助手」2026-10-26 加入） */
 .feature-art { display: block; width: 52px; height: 52px; margin-bottom: 0.75rem; }
 @media (max-width: 560px) { .feature-art { width: 46px; height: 46px; } }
+
+/* ── 助手（首頁 #assistant、功能頁 #assistant）──────────────────────────
+   示意畫面照 App 的 .ai-* 長相畫（web/watchlist.css）：使用者氣泡紫、卡片標題前一顆 ✦、
+   資料列「標籤／數值／灰字」、確認卡的主鍵金色。卡上的字是 App 真的會寫的字
+   （aiConfirmCard 的「設定到價提醒？」與「設定／改一下／取消」、assistantHoldings 的「我的持股」），
+   數字是示意；App 的卡片改了字，這裡要回來對。
+   引號裡與籤上的例句（.ask-say）每一句都是助手目錄 catalog.json 的 golden 例句，test_marketing_site 釘住。 */
+.ask-wrap { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.ask-demo { margin: 0; }
+.ask-demo figcaption { margin-top: 0.9rem; color: var(--dim); font-size: 0.86rem; }
+.ask-mock {
+  display: flex; flex-direction: column; gap: 0.6rem;
+  background: var(--bg-2); border: 1px solid var(--border-strong); border-radius: 28px;
+  padding: 1rem 0.85rem 0.85rem; box-shadow: var(--shadow-soft);
+  font-size: 0.9rem; line-height: 1.5;
+}
+.ask-title { display: flex; align-items: center; gap: 0.4rem; font-weight: 700; padding: 0 0.2rem 0.55rem; border-bottom: 1px solid var(--border); }
+.ask-star { color: var(--accent); font-style: normal; }
+.ask-user {
+  align-self: flex-end; max-width: 86%;
+  background: rgba(139, 124, 255, 0.22); border: 1px solid rgba(139, 124, 255, 0.38);
+  border-radius: 16px 16px 6px 16px; padding: 0.45rem 0.8rem;
+}
+.ask-card { background: var(--surface-2); border: 1px solid rgba(150, 178, 235, 0.34); border-radius: 16px; padding: 0.7rem 0.8rem; }
+.ask-card-head { display: flex; align-items: center; gap: 0.4rem; font-weight: 700; }
+.ask-card-sub { color: var(--muted); font-size: 0.78rem; }
+.ask-rows { margin-top: 0.3rem; }
+.ask-row { display: flex; justify-content: space-between; align-items: baseline; gap: 0.6rem; padding: 0.36rem 0; border-top: 1px solid var(--border); }
+.ask-row:first-child { border-top: 0; }
+.ask-row b { font-weight: 600; flex: none; }
+.ask-row span { flex: 1 1 auto; min-width: 0; text-align: right; font-variant-numeric: tabular-nums; }
+.ask-row i { font-style: normal; color: var(--muted); font-size: 0.76rem; text-align: right; }
+.ask-row .up { color: var(--chg-up); }
+.ask-btns { display: flex; gap: 0.4rem; margin-top: 0.55rem; }
+.ask-btns span { flex: 1; text-align: center; padding: 0.45rem 0; border: 1px solid var(--border); border-radius: 10px; font-weight: 700; font-size: 0.86rem; }
+.ask-btns .main { background: var(--accent-2); border-color: transparent; color: #1a1300; }
+.ask-input {
+  display: flex; align-items: center; gap: 0.55rem; margin-top: 0.2rem;
+  border: 1px solid var(--border-strong); border-radius: 999px;
+  padding: 0.35rem 0.35rem 0.35rem 0.75rem; color: var(--dim); font-size: 0.84rem;
+}
+.ask-input svg { width: 18px; height: 18px; flex: none; }
+.ask-input span { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ask-input i { width: 30px; height: 30px; flex: none; border-radius: 50%; background: var(--surface-2); border: 1px solid var(--border); }
+/* 好處格（Howard 2026-10-26：「不要文字說明的冗長，重點行銷好處，用圖示輔佐」）：
+   一格＝一個線條圖示＋一句標題＋一行字；圖示與功能格同一套筆畫（紫線、金色強調）。 */
+.ask-perks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.ask-wrap > .ask-perks { align-self: center; }   /* 首頁：示意畫面比六格高，六格放在它的中段 */
+.ask-perk { display: flex; align-items: flex-start; gap: 0.95rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem 1.15rem; }
+.ask-perk > div { min-width: 0; }
+.ask-perk-art { flex: none; width: 48px; height: 48px; }
+.ask-perk h3 { font-size: 1.02rem; margin-bottom: 0.3rem; }
+.ask-perk p { color: var(--muted); font-size: 0.92rem; line-height: 1.6; }
+.ask-perk .ask-say { color: var(--text); }
+.ask-note { margin-top: 1.6rem; color: var(--dim); font-size: 0.88rem; }
+/* 功能頁「試試這樣問」：一排籤，長相照 App 的 .ai-chip */
+.feature-detail > .ask-try { grid-column: 1 / -1; }
+.ask-try h3 { margin-bottom: 0.8rem; }
+.ask-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.ask-chips .ask-say { padding: 0.4rem 0.9rem; border-radius: 999px; border: 1px solid rgba(139, 124, 255, 0.45); background: rgba(139, 124, 255, 0.12); font-size: 0.9rem; }
+.ask-try .ask-note { margin-top: 1rem; }
+@media (max-width: 900px) {
+  .ask-wrap { grid-template-columns: minmax(0, 1fr); }
+  .ask-demo { max-width: 400px; width: 100%; margin-inline: auto; }
+}
+@media (max-width: 560px) {
+  .ask-perks { grid-template-columns: minmax(0, 1fr); gap: 0.8rem; }
+  .ask-perk-art { width: 42px; height: 42px; }
+}
 
 /* 60 秒短片：直式影片，桌機不要撐滿整欄（9:16 放到 1000px 寬會變成一根柱子） */
 .promo { margin: 0; display: flex; flex-direction: column; align-items: flex-start; }
